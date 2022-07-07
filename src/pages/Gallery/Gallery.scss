@@ -1,0 +1,11 @@
+.gallery{
+    display: flex;
+    flex-direction: column;
+    .carta{
+        display: flex;
+        img{
+            width: 200px;
+        }
+
+    }
+}
