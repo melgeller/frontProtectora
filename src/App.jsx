@@ -11,10 +11,12 @@ import Forms from "./pages/CreateForm/Forms";
 import Contact from "./pages/Contact/Contact";
 import Blog from "./pages/Blog/Blog";
 import About from "./pages/About/About";
+import { PetContextProvider } from "./context/context";
 
 function App() {
   return (
     <div className='App'>
+     <PetContextProvider>
       <Router>
         <NavBar></NavBar>
         <Routes>
@@ -31,6 +33,7 @@ function App() {
         </Routes>
         <Footer></Footer>
       </Router>
+      </PetContextProvider>
     </div>
   );
 }
