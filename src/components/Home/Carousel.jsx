@@ -18,6 +18,7 @@ const Carousel = () => {
   return (
     <>
       <section className='carouselContainer'>Carousel</section>
+
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
@@ -31,7 +32,7 @@ const Carousel = () => {
         modules={[Pagination, Navigation]}
         className='mySwiper'>
         <SwiperSlide>
-          <img src='../../assets/ImgCity/Bangkok.jpg' alt='' />{' '}
+          <img src='../../assets/ImgCity/Bangkok.jpg' alt='' />
         </SwiperSlide>
         <SwiperSlide>
           <img src='../../assets/ImgCity/Barcelona.jpg' alt='' />{' '}
