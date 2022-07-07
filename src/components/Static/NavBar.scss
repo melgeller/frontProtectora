@@ -1,0 +1,24 @@
+.navbar{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    background-color: #FFFDE8;
+    img{
+        width: 90px;
+        margin: 10px;
+    }
+}
+
+.lista{
+    width: 100%;
+    height: 10%;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        li{
+            font-weight: 400;
+        }
+    }
+}
