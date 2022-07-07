@@ -9,6 +9,9 @@ const Blog = () => {
 
   return (
     <div className='blog'>
+    <div className='goBack'>
+    <p className='main'><Link to='/'> --Volver a la vista principal</Link></p>
+    </div>
     {blogs.map((blog)=> (
       <Link key={blog._id} to={`${blog._id}`}>
       <div className='carta-blog'>

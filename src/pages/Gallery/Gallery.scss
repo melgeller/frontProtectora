@@ -1,10 +1,47 @@
 .gallery{
     display: flex;
     flex-direction: column;
+    
+    width: 90vw;
+    height: 90vh;
+    
+    gap: 20px;
+    padding-left: 2%;
+    .goBack{
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px;
+    
+        display: flex;
+        background-color: rgb(217,217,217);
+        .main{
+            display: flex;
+            font-size: 80%;
+            align-items: center;
+            margin-left: 2vw;
+        }
+        
+    }
+    
     .carta{
         display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        border: solid 1px black;
+        width: 90vw;
+        height: 25vh;
+        gap: 10px;
+        
         img{
-            width: 200px;
+            width: 30%;
+            height: 80%;
+            object-fit: contain;
+        }
+        
+        .texto-alfredo{
+            gap: 30px;
+            width:20%;
         }
 
     }

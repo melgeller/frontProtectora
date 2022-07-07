@@ -10,6 +10,9 @@ const Gallery = () => {
 
   return (
     <div className='gallery'>
+    <div className='goBack'>
+    <p className='main'><Link to='/'> --Volver a la vista principal</Link></p>
+    </div>
     
     {pets.map((pet)=> (
       <Link key={pet._id} to={`${pet._id}`}>

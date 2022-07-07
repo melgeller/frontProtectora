@@ -1,0 +1,34 @@
+.blog{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .goBack{
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px;
+    
+        display: flex;
+        background-color: rgb(217,217,217);
+        .main{
+            display: flex;
+            font-size: 80%;
+            align-items: center;
+            margin-left: 2vw;
+        }
+        
+    }
+    
+
+    .carta-blog{
+        margin-top: 20px;
+        width: 20vw;
+        gap: 10px;
+        
+        
+        
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
