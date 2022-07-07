@@ -10,11 +10,11 @@ const NavBar = () => {
       <nav className='lista'>
         <ul>
           <li><Link to='/'>Home</Link></li>
-          <li><Link to='/adopta'>Adopta</Link></li>
+          <li><Link to='/gallery'>Adopta</Link></li>
           <li><Link to='/about'>Quienes somos</Link></li>
           <li><Link to='/blog'>Noticias</Link></li>
           <li><Link to='/contact'>Contacto</Link></li>
-          <li><Link to='/donations'>Donaciones</Link></li>
+          <li><Link to='/donaciones'>Donaciones</Link></li>
           <li><Link to='/admin'>Administración</Link></li>
         </ul>
       </nav>
