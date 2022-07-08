@@ -15,7 +15,7 @@ import { PetContextProvider } from "./context/context";
 
 function App() {
   return (
-    <div className='App'>
+    <div className='App' id="outer-container">
      <PetContextProvider>
       <Router>
         <NavBar></NavBar>
