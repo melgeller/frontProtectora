@@ -19,6 +19,9 @@
         justify-content: space-around;
         li{
             font-weight: 400;
+            :hover {
+                border-bottom: 5px solid rgb(217,217,217);;
+              }
         }
     }
 }

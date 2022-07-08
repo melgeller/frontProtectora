@@ -13,7 +13,7 @@ const About = () => {
     <h3>Ladrando</h3>
     <img src="../../assets/perro_5.webp" alt="foto about"/>
     </div>
-    <p>LA PLATAFORMA IDEAL NO PARA TI, PARA TU MASCOTA. Nuestra mision es crear vinculos con animales que aseguren...
+    <p><span className='negrita'>LA PLATAFORMA IDEAL NO PARA TI, PARA TU MASCOTA.</span> Nuestra mision es crear vinculos con animales que aseguren...
     Lorem fistrum a gramenawer al ataquerl pecador pecador. Va usté muy cargadoo papaar papaar está la cosa muy malar benemeritaar. Mamaar amatomaa ese pedazo de se calle ustée va usté muy cargadoo me cago en tus muelas papaar papaar jarl ahorarr me cago en tus muelas condemor. Ese que llega te voy a borrar elrrr ahora eroereorme si o si vale.
      
     </p>

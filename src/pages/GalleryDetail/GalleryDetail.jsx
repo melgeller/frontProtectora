@@ -28,6 +28,7 @@ const GalleryDetail = () => {
     <div className='details'>
     <div className='goBack'>
     <p className='main'><Link to='/'> --Volver a la vista principal</Link></p>
+    <p className='main'><Link to='/gallery'> --Volver atras</Link></p>
     </div>
       {pet ? (
         <>
