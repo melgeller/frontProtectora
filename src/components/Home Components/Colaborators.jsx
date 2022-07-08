@@ -1,8 +1,8 @@
 import React from 'react';
-
+import "./Colaborators.scss";
 const Colaborators = () => {
   return (
-    <section>
+    <section className='colaboratorsContainer'>
       <ul>
         <li>
           <h4>
