@@ -92,11 +92,31 @@
 }
 
 
-@media screen and (max-width: 391px){
+
+@media screen and (max-width: 505px){
     .gallery{
         .carta{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img{
+            margin:15px  5px;
+            margin-left: 15px;
+            width: 250px;
+            height: 250px;
+            min-width: 250px;
+            
+            object-fit:cover;
+            
+        }
+        .texto-animales{
+            justify-content: center;
+            align-items: center;
+        }
+        .linkPerro{
+            margin-bottom: 20px;
+        }
         }
     }
 }
