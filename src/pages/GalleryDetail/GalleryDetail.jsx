@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./GalleryDetail.scss";
+import { Link } from "react-router-dom";
 
 const GalleryDetail = () => {
   const { id } = useParams();
@@ -25,6 +26,9 @@ const GalleryDetail = () => {
 
   return (
     <div className='details'>
+    <div className='goBack'>
+    <p className='main'><Link to='/'> --Volver a la vista principal</Link></p>
+    </div>
       {pet ? (
         <>
           {loaded ? (

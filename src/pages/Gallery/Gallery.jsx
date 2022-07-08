@@ -10,9 +10,12 @@ const Gallery = () => {
 
   return (
     <div className='gallery'>
+    <div className='goBack'>
+    <p className='main'><Link to='/'> --Volver a la vista principal</Link></p>
+    </div>
     
     {pets.map((pet)=> (
-      <Link key={pet._id} to={`${pet._id}`}>
+      
       <div className='carta'>
        <img src={pet.picture} alt={pet.name}/>
        <div className='texto-alfredo'>
@@ -23,10 +26,12 @@ const Gallery = () => {
        <p>{pet.adopted}</p>
        </div>
        <p>{pet.description}</p>
+       <Link key={pet._id} to={`${pet._id}`}>
        <button>ver bicho</button>
+       </Link>
       </div>
 
-      </Link>
+      
     ))}
 
     
