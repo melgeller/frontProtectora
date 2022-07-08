@@ -27,7 +27,7 @@ const Gallery = () => {
        </div>
        <p>{pet.description}</p>
        <Link key={pet._id} to={`${pet._id}`}>
-       <button>ver bicho</button>
+       <span>ver bicho</span>
        </Link>
       </div>
 
