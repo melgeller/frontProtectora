@@ -27,21 +27,24 @@ const GalleryDetail = () => {
   return (
     <div className='details'>
     <div className='goBack'>
-    <p className='main'><Link to='/'> --Volver a la vista principal</Link></p>
-    <p className='main'><Link to='/gallery'> --Volver atras</Link></p>
+    <p className='main'><Link to='/gallery'> --Volver atrás</Link></p>
     </div>
       {pet ? (
         <>
           {loaded ? (
-            <>
+            <div className="galleryDetail">
               <img src={pet.picture} alt={pet.name}></img>
               <p>{pet.name}</p>
               <p>{pet.sex}</p>
               <p>{pet.age}</p>
               <p>{pet.size}</p>
               <p>{pet.adopted}</p>
+              <div className="textDetail">
               <p>{pet.description}</p>
-            </>
+              </div>
+              <p><Link to='/adopcion'>Adoptar</Link></p>
+            </div> 
+            
           ) : (
             <div className='gif'>
               <img src='../../assets/loaded.gif' alt='loaded'></img>

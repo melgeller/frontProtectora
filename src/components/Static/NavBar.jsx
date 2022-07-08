@@ -14,9 +14,10 @@ const NavBar = () => {
           <li><NavLink to='/gallery' activeClassName='selected'>Adopta</NavLink></li>
           <li><NavLink to='/about' activeClassName='selected'>Quienes somos</NavLink></li>
           <li><NavLink to='/blog' activeClassName='selected'>Noticias</NavLink></li>
-          <li><NavLink to='/contact' activeClassName='selected'>Contacto</NavLink></li>
+          <li><NavLink to='/contacto' activeClassName='selected'>Contacto</NavLink></li>
           <li><NavLink to='/donaciones' activeClassName='selected'>Donaciones</NavLink></li>
           <li><NavLink to='/admin' activeClassName='selected'>Administración</NavLink></li>
+          
         </ul>
       </nav>
     </div>
