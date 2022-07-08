@@ -11,7 +11,7 @@ const Contact = () => {
           <Link to='/'> --Volver a la vista principal</Link>
         </p>
       </div>
-      <div>
+      <div className="adoptForm">
         <img src='../../assets/adoptarmascota.png' alt='foto about' />
         <p>
           Si estás en esta página es porque ya te has decidido a adoptar.
