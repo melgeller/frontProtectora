@@ -2,9 +2,14 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Contact.scss";
 import emailjs from "@emailjs/browser";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 const Contact = () => {
     const form = useRef();
+    const MySwal = withReactContent(Swal)
+
+   
   const sendEmail = (e) => {
     e.preventDefault();
     console.log(e.target);
@@ -18,11 +23,23 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          MySwal.fire({
+            title: <strong>Gracias por contactar</strong>,
+            html: <i>En breves, nos pondremos en contacto contigo</i>,
+            icon: 'success'
+          })
         },
         (error) => {
           console.log(error.text);
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+            footer: '<a href="">Why do I have this issue?</a>'
+          })
         }
       );
+      
   };
   return (
     <><div className='goBack'>
