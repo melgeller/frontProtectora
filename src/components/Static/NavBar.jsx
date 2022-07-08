@@ -1,11 +1,12 @@
 import React from "react";
 import './NavBar.scss'
 import { Link } from 'react-router-dom'
-
+import SideBar from '../Navbar/SideBar';
 
 const NavBar = () => {
   return (
-    <div className='navbar'>
+    <div className='navbar' id="outer-container">
+     <SideBar className='SideBar' pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
       <img src='../../assets/logoperro.png' alt='logoperro' />
       <nav className='lista'>
         <ul>
