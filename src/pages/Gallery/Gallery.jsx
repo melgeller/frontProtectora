@@ -12,22 +12,24 @@ const Gallery = () => {
     <div className='gallery'>
     <div className='goBack'>
     <p className='main'><Link to='/'> --Volver a la vista principal</Link></p>
+    <p className='main filtro'>Filtro</p>
     </div>
     
     {pets.map((pet)=> (
       
       <div className='carta'>
        <img src={pet.picture} alt={pet.name}/>
-       <div className='texto-alfredo'>
-       <p>{pet.name}</p>
-       <p>{pet.sex}</p>
-       <p>{pet.age}</p>
-       <p>{pet.size}</p>
+       <div className='texto-animales'>
+       <h3>{pet.name}</h3>
+       <p>Sexo: {pet.sex}</p>
+       <p>Edad: {pet.age}</p>
+       <p>Tamaño: {pet.size}</p>
        <p>{pet.adopted}</p>
        </div>
-       <p>{pet.description}</p>
+       <p className='animalsP'>{pet.description}</p>
        <Link key={pet._id} to={`${pet._id}`}>
-       <span>ver bicho</span>
+       <p className='linkPerro'>ver bicho</p>
+
        </Link>
       </div>
 

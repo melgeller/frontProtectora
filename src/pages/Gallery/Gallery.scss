@@ -3,6 +3,10 @@
     flex-direction: column;
     
     width: 90vw;
+
+
+    margin-bottom: 60px;
+
     
     gap: 20px;
     padding-left: 2%;
@@ -12,36 +16,87 @@
         padding: 10px;
     
         display: flex;
+        justify-content: space-between;
         background-color: rgb(217,217,217);
         .main{
             display: flex;
             font-size: 80%;
             align-items: center;
             margin-left: 2vw;
+            &:hover{
+                backface-visibility: hidden;
+                transform: scale(1.05);
+                opacity: 1;
+            }
+        }
+        .filtro{
+            left: 90vw;
+            margin-right: 2vw;
         }
         
     }
     
     .carta{
         display: flex;
-        justify-content: space-around;
         align-items: center;
         
         border: solid 1px black;
-        width: 90vw;
-        height: 25vh;
+        width: 91vw;
+       
         gap: 10px;
         
+        
         img{
-            width: 30%;
-            height: 80%;
-            object-fit: contain;
+            
+            margin:15px  5px;
+            margin-left: 15px;
+            width: 250px;
+            height: 200px;
+            min-width: 250px;
+            
+            object-fit:cover;
+            
         }
         
-        .texto-alfredo{
-            gap: 30px;
-            width:20%;
+        .texto-animales{
+            text-transform: capitalize;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            width:170px;
+        }
+        .animalsP{
+            width: 50%;
+            @media screen and (max-width: 850px){
+                display:none;
+    
+            }
+        }
+        .linkPerro{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(217,217,217);
+            padding: 10px;
+            padding-inline: 15px;
+            margin-inline: 15px;
+            border: solid 1px black;
+            &:hover{
+                backface-visibility: hidden;
+                transform: scale(1.05);
+                opacity: 1;
+            }
         }
 
+    }
+}
+
+
+@media screen and (max-width: 391px){
+    .gallery{
+        .carta{
+        display: flex;
+        flex-direction: column;
+        }
     }
 }
