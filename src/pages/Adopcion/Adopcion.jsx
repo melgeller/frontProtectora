@@ -76,61 +76,61 @@ export const Adopcion = () => {
         <h3>Datos del Animal</h3>
         <fieldset>
           <label for='petname'>Nombre del Animal</label>
-          <input type='text' id='petname' name='petname' />
+          <input type='text' id='petname' name='petname' required='obligatorio' />
           <h3>Datos personales</h3>
           <section className='name'>
             <p>Nombre *</p>
             <label for='name'>Nombre</label>
-            <input type='text' id='name' name='name' />
+            <input type='text' id='name' name='name' required='obligatorio' />
             <label for='surname'>Apellidos</label>
-            <input type='text' id='surname' name='surname' />
+            <input type='text' id='surname' name='surname' required='obligatorio' />
           </section>
           <section className='adress'>
             <p>Direccion *</p>
             <label for='direccion'>Direccion</label>
-            <input type='text' id='direccion' name='direccion' />
+            <input type='text' id='direccion' name='direccion' required='obligatorio'/>
             <label for='localidad'>Localidad</label>
-            <input type='text' id='localidad' name='localidad' />
+            <input type='text' id='localidad' name='localidad' required='obligatorio' />
             <label for='provincia'>Provincia</label>
-            <input type='text' id='provincia' name='provincia' />
+            <input type='text' id='provincia' name='provincia' required='obligatorio' />
             <label for='cp'>Código Postal</label>
-            <input type='text' id='cp' name='cp' />
+            <input type='text' id='cp' name='cp'  required='obligatorio'/>
           </section>
           <section className='telefono'>
             <p>Telefono *</p>
             <label for='telefono'></label>
-            <input type='text' id='telefono' name='telefono' />
+            <input type='text' id='telefono' name='telefono' required='obligatorio' />
           </section>
           <section className='email'>
             <p>Email *</p>
             <label for='email'></label>
-            <input type='text' id='email' name='email' />
+            <input type='email' id='email' name='email' required='obligatorio'/>
           </section>
           <section className='dni'>
             <p>Dni *</p>
             <label for='dni'></label>
-            <input type='text' id='dni' name='dni' />
+            <input type='text' id='dni' name='dni' required='obligatorio'/>
           </section>
           <section className='fechana'>
             <p>Fecha de nacimiento *</p>
             <label for='fechana'></label>
-            <input type='text' id='fechana' name='fechana' />
+            <input type='date' id='fechana' name='fechana' required='obligatorio' />
           </section>
           <section className='lugarna'>
             <p>Lugar de Nacimiento *</p>
             <label for='lugarna'></label>
-            <input type='text' id='lugarna' name='lugarna' />
+            <input type='text' id='lugarna' name='lugarna' required='obligatorio'/>
           </section>
           <section className='profesion'>
             <p>Profesión *</p>
             <label for='profesion'></label>
-            <input type='text' id='profesion' name='profesion' />
+            <input type='text' id='profesion' name='profesion' required='obligatorio' />
           </section>
           <h3> Experiencia</h3>
           <section className='profesion'>
             <p>¿Has tenido mascota antes? *</p>
             <label for='mascota'>Elige una opcion</label>
-            <select name='mascota' id='mascota'>
+            <select name='mascota' id='mascota' required='obligatorio'>
               <option value='si'>Si</option>
               <option value='no'>No</option>
             </select>
@@ -138,37 +138,37 @@ export const Adopcion = () => {
           <section className='raza'>
             <p>¿De qué raza? *</p>
             <label for='raza'></label>
-            <input type='text' id='raza' name='raza' />
+            <input type='text' id='raza' name='raza' required='obligatorio'/>
           </section>
           <section className='seguimiento'>
             <p>¿El animal sigue con usted? *</p>
             <label for='seguimiento'></label>
-            <input type='text' id='seguimiento' name='seguimiento' />
+            <input type='text' id='seguimiento' name='seguimiento' required='obligatorio'/>
           </section>
           <section className='otros'>
             <p>¿Tiene otros animales en casa? *</p>
             <label for='otros'></label>
-            <input type='text' id='otros' name='otros' />
+            <input type='text' id='otros' name='otros' required='obligatorio'/>
           </section>
           <section className='cuantos'>
             <p>¿Cuántos y de qué especie? *</p>
             <label for='cuantos'></label>
-            <input type='text' id='cuantos' name='cuantos' />
+            <input type='text' id='cuantos' name='cuantos' required='obligatorio'/>
           </section>
           <section className='cantidad'>
             <p>¿Indique sexo, edad, especie..? *</p>
             <label for='cantidad'></label>
-            <input type='text' id='cantidad' name='cantidad' />
+            <input type='text' id='cantidad' name='cantidad' required='obligatorio'/>
           </section>
           <h2>Datos de la Vivienda</h2>
           <section className='tipocasa'>
             <p>¿Tipo de vivienda (casa, piso,..)? *</p>
             <label for='tipocasa'></label>
-            <input type='text' id='tipocasa' name='tipocasa' />
+            <input type='text' id='tipocasa' name='tipocasa' required='obligatorio'/>
           </section>
           <h2>¿Tiene Terraza?</h2>
           <label for='terraza'>Elige una opcion</label>
-          <select name='terraza' id='terraza'>
+          <select name='terraza' id='terraza' required='obligatorio'>
             <option value='si'>Si</option>
             <option value='no'>No</option>
           </select>
@@ -177,7 +177,7 @@ export const Adopcion = () => {
             propietario con la entrada de un perro a la vivienda?
           </h2>
           <label for='alquiler'>Elige una opcion</label>
-          <select name='alquiler' id='alquiler'>
+          <select name='alquiler' id='alquiler' required='obligatorio'>
             <option value='si'>Si</option>
             <option value='no'>No</option>
             <option value='nose'>No lo sé</option>
@@ -186,17 +186,17 @@ export const Adopcion = () => {
           <section className='lugarcasa'>
             <p>¿Que lugar de la casa estará destinado para el animal? *</p>
             <label for='lugarcasa'></label>
-            <input type='text' id='lugarcasa' name='lugarcasa' />
+            <input type='text' id='lugarcasa' name='lugarcasa' required='obligatorio'/>
           </section>
           <section className='lugarcasa'>
             <p>¿En qué lugar podrá descansar/dormir? *</p>
             <label for='dormir'></label>
-            <input type='text' id='dormir' name='dormir' />
+            <input type='text' id='dormir' name='dormir' required='obligatorio'/>
           </section>
           <section className='lugarcasa'>
             <p>¿A qué lugar de la vivienda no podrá acceder el animal? *</p>
             <label for='acceso'></label>
-            <input type='text' id='acceso' name='acesso' />
+            <input type='text' id='acceso' name='acesso' required='obligatorio'/>
           </section>
           <h3>DATOS DE LA FAMILIA</h3>
           <section className='convivencia'>
@@ -204,28 +204,28 @@ export const Adopcion = () => {
               ¿Qué otras personas conviven con usted en la misma vivienda? *
             </p>
             <label for='convivencia'></label>
-            <input type='text' id='convivencia' name='convivencia' />
+            <input type='text' id='convivencia' name='convivencia' required='obligatorio'/>
           </section>
           <section className='alergias'>
             <p> ¿Alguno de ellos es alérgico a los animales? *</p>
             <label for='alergias'></label>
-            <input type='text' id='alergias' name='alergias' />
+            <input type='text' id='alergias' name='alergias' required='obligatorio'/>
           </section>
           <section className='hijos'>
             <p>¿Tiene hijos? *</p>
             <label for='hijos'></label>
-            <input type='text' id='hijos' name='hijos' />
+            <input type='text' id='hijos' name='hijos' required='obligatorio'/>
           </section>
           <section className='plazo'>
             <p>¿Tiene pensado ser padre/madre a corto plazo? *</p>
             <label for='plazo'></label>
-            <input type='text' id='plazo' name='plazo' />
+            <input type='text' id='plazo' name='plazo' required='obligatorio'/>
           </section>
           <h3>DATOS DE LA ADOPCION</h3>
           <section className='pq'>
             <p>¿Por qué ha decidido adoptar? *</p>
             <label for='decision'></label>
-            <textarea id='decision' name='decision' rows='4' cols='50' />
+            <textarea id='decision' name='decision' rows='4' cols='50' required='obligatorio'/>
           </section>
           <section className='pq'>
             <p>
@@ -233,7 +233,7 @@ export const Adopcion = () => {
               asociación?*{" "}
             </p>
             <label for='motivos'></label>
-            <textarea id='motivos' name='motivos' rows='4' cols='50' />
+            <textarea id='motivos' name='motivos' rows='4' cols='50' required='obligatorio'/>
           </section>
           <h2>CONSENTIMIENTO Y ACEPTACIÓN DE CONDICIONES</h2>
           <h3>Consentimiento</h3>
