@@ -29,6 +29,7 @@ const Gallery = () => {
        <p className='animalsP'>{pet.description}</p>
        <Link key={pet._id} to={`${pet._id}`}>
        <p className='linkPerro'>ver bicho</p>
+
        </Link>
       </div>
 
