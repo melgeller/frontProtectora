@@ -1,11 +1,22 @@
-.goBack{
-    margin-top: 10px;
-    width: 100%;
-    padding: 10px;
-
+.main{
+    background-color: #D9D9D9;
     display: flex;
-    background-color: rgb(217,217,217);
-    
+    justify-content: space-between;
+    width: 91vw;
+    font-size: 80%;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    p{
+        margin-right: 10px;
+    }
+    img{
+        width: 20px;
+        margin-left: 20px;
+    }
 }
 .galleryDetail{
     display: flex;
@@ -23,4 +34,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

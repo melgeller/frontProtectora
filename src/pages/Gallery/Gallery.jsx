@@ -11,12 +11,12 @@ const Gallery = () => {
 
   return (
     <div className='gallery'>
-      <div className='goBack'>
-        <p className='main'>
-          <Link to='/'> --Volver a la vista principal</Link>
-        </p>
-        <p className='main filtro'>Filtro</p>
-      </div>
+      <p className='main'>
+        <Link to='/'>
+          <img src="../../../assets/flecha.png" alt="flecha"/>
+        </Link>
+        <p>Filtro</p>
+      </p>
 
       {pets.map((pet) => (
         <div className='carta'>

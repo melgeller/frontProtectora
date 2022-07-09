@@ -16,7 +16,7 @@ const NavBar = () => {
         pageWrapId={'page-wrap'}
         outerContainerId={'outer-container'}
       />
-      <img src='../../assets/logoperro.png' alt='logoperro' />
+      <img className='rotar' src='../../assets/logoperro.png' alt='logoperro' />
       <nav className='lista'>
         <ul>
           <li>
