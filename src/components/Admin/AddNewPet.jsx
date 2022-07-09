@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { API } from '../../services/api';
 import { useNavigate } from 'react-router-dom';
-
+import AddBlogs from './AddBlogs';
 const AddNewPet = () => {
   const { register, handleSubmit } = useForm();
   const navigate = useNavigate();
@@ -26,6 +26,7 @@ const AddNewPet = () => {
     });
     navigate('/gallery');
   };
+  
   return (
     <>
       <h1>Añadir mascota</h1>
@@ -126,6 +127,8 @@ const AddNewPet = () => {
         </div>
         <button type='submit'>Añadir mascota</button>
       </form>
+      <AddBlogs></AddBlogs>
+      
     </>
   );
 };
