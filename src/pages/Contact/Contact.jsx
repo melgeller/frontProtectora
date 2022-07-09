@@ -45,11 +45,6 @@ const Contact = () => {
 
   return (
     <>
-    
-  
-      
-          <h1>Formulario de contacto</h1>
-          <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
           <div class='w-full max-w-xs'>
           <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" ref={form} onSubmit={sendEmail}>
                <div class="mb-4">
@@ -69,7 +64,7 @@ const Contact = () => {
             
 
               <div class="mb-6">
-              <label for='email' class='colocar_email'>
+              <label for='email' class="block text-gray-700 text-sm font-bold mb-2">
                 Email
                 <span className='obligatorio'>*</span>
               </label>
