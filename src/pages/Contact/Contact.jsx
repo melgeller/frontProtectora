@@ -46,9 +46,11 @@ const Contact = () => {
   return (
     <>
     
-      <div className='goBack'>
+      <div className='barraContacto'>
         <p className='main'>
-          <Link to='/'> --Volver a la vista principal</Link>
+          <Link to='/'>
+          <img src="../../../assets/flecha.png" alt="flecha"/>
+          </Link>
         </p>
       </div>
       <div className='contact_form'>
