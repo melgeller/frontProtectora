@@ -5,53 +5,80 @@ import { JwtContext } from '../../context/jwtContext';
 import { useContext } from 'react';
 import ButtonLogout from '../LoginComponent/ButtonLogout';
 import SideBar from '../Navbar/SideBar';
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   const { jwt } = useContext(JwtContext);
+  const activeClassName = "selected";
   return (
-    <div className='navbar' id="outer-container">
-     <SideBar className='SideBar' pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+    <div className='navbar' id='outer-container'>
+      <SideBar
+        className='SideBar'
+        pageWrapId={'page-wrap'}
+        outerContainerId={'outer-container'}
+      />
       <img src='../../assets/logoperro.png' alt='logoperro' />
       <nav className='lista'>
         <ul>
-
           <li>
-            <Link to='/'>Home</Link>
+            <NavLink
+              to='/'
+              className={({ isActive }) =>
+              isActive ? activeClassName : undefined
+            }>
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to='/gallery'>Adopta</Link>
+            <NavLink to='/gallery' className={({ isActive }) =>
+              isActive ? activeClassName : undefined
+            }>
+              Adopta
+            </NavLink>
           </li>
           <li>
-            <Link to='/about'>Quienes somos</Link>
+            <NavLink to='/about' className={({ isActive }) =>
+              isActive ? activeClassName : undefined
+            }>
+              Quienes somos
+            </NavLink>
           </li>
           <li>
-            <Link to='/blog'>Noticias</Link>
+            <NavLink to='/blog' className={({ isActive }) =>
+              isActive ? activeClassName : undefined
+            }>
+              Noticias
+            </NavLink>
           </li>
           <li>
-            <Link to='/contact'>Contacto</Link>
+            <NavLink to='/contact' className={({ isActive }) =>
+              isActive ? activeClassName : undefined
+            }>
+              Contacto
+            </NavLink>
           </li>
           <li>
-            <Link to='/donaciones'>Donaciones</Link>
+            <NavLink to='/donaciones' className={({ isActive }) =>
+              isActive ? activeClassName : undefined
+            }>
+              Donaciones
+            </NavLink>
           </li>
           {jwt && (
             <>
               <li>|</li>
               <li>
-                <Link to='/admin'>Administración</Link>
+                <NavLink to='/admin' className={({ isActive }) =>
+              isActive ? activeClassName : undefined
+            }>
+                  Administración
+                </NavLink>
               </li>
               <li>
                 <ButtonLogout></ButtonLogout>
               </li>
             </>
           )}
-          <li><NavLink to='/' exact activeClassName='selected'>Home</NavLink></li>
-          <li><NavLink to='/gallery' activeClassName='selected'>Adopta</NavLink></li>
-          <li><NavLink to='/about' activeClassName='selected'>Quienes somos</NavLink></li>
-          <li><NavLink to='/blog' activeClassName='selected'>Noticias</NavLink></li>
-          <li><NavLink to='/contacto' activeClassName='selected'>Contacto</NavLink></li>
-          <li><NavLink to='/donaciones' activeClassName='selected'>Donaciones</NavLink></li>
-          <li><NavLink to='/admin' activeClassName='selected'>Administración</NavLink></li>
         </ul>
       </nav>
     </div>
