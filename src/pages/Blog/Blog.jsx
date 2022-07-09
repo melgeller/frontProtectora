@@ -13,14 +13,12 @@ const Blog = () => {
     <p className='main'><Link to='/'> --Volver a la vista principal</Link></p>
     </div>
     {blogs.map((blog)=> (
-      <Link key={blog._id} to={`${blog._id}`}>
       <div className='carta-blog'>
        <img src={blog.picture} alt={blog.title}/>
         <p>{blog.title}</p>
         <p>{blog.content}</p>
 
-      </div>
-      </Link> 
+      </div> 
     ))}
 
 

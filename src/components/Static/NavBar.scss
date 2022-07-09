@@ -8,6 +8,7 @@
         width: 90px;
         margin: 10px;
     }
+    
 }
 
 .lista{
@@ -19,9 +20,14 @@
         justify-content: space-around;
         li{
             font-weight: 400;
-            :hover {
-                border-bottom: 5px solid rgb(217,217,217);;
-              }
         }
     }
+    @media screen and (max-width: 750px){
+        display:none;
+
+    }
+    .selected{
+        font-weight: bolder;
+    }
 }
+
