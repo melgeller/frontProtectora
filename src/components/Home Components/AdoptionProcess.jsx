@@ -7,23 +7,23 @@ const AdoptionProcess = () => {
       <ul>
         <li>
           <img src='' alt='' />
-          <h3>Step 1</h3>
-          <p>Lorem fistrum apetecan qué dise usteer va usté muy cargadoo amatomaa a wan diodeno ahorarr ese que llega quietooor. Benemeritaar tiene musho peligro papaar papaar te voy a borrar el cerito tiene musho peligro fistro torpedo. A wan benemeritaar quietooor a peich ese que llega hasta luego Lucas. </p>
+          <h3>Paso 1 </h3>
+          <p>Ven a conocernos a la prote y si sientes un match con alguno de nuestros peludos escribenos. </p>
         </li>
         <li>
           <img src='' alt='' />
-          <h3>Step 2</h3>
-          <p>Me cago en tus muelas no puedor por la gloria de mi madre llevame al sircoo qué dise usteer jarl diodeno ahorarr va usté muy cargadoo. Amatomaa pecador sexuarl ese pedazo de a wan mamaar la caidita.  </p>
+          <h3>Paso 2</h3>
+          <p>Después de recibir tu email, estudiaremos tu caso, nos pondremos en contacto con vosotros lo antes posible y organizaremos otra visita para que os podais seguir conociendo.  </p>
         </li>
         <li>
           <img src='' alt='' />
-          <h3>Step 3</h3>
-          <p>Por la gloria de mi madre no puedor diodenoo ahorarr de la pradera diodenoo no puedor por la gloria de mi madre jarl. Va usté muy cargadoo no puedor diodeno la caidita a peich a peich hasta luego Lucas te voy a borrar el cerito por la gloria de mi madre diodeno tiene musho peligro.</p>
+          <h3>Paso 3</h3>
+          <p>Si entre vosotos existe una conexión  y pasais los requesitos impresdincibles para nosotros y todos estamos de acuerdo con las condiciones de la protectora ya solo queda una cosa...</p>
         </li>
         <li>
           <img src='' alt='' />
-          <h3>Step 4</h3>
-          <p>Te voy a borrar el cerito pecador a gramenawer te voy a borrar el cerito quietooor por la gloria de mi madre al ataquerl. Jarl fistro jarl pecador diodenoo a gramenawer va usté muy cargadoo tiene musho peligro está la cosa muy malar.</p>
+          <h3>Paso 4</h3>
+          <p>Organizar el dia perfecto para venir a recoger al nuevo miembro de la familiay disfrutar toda la vida de él.</p>
         </li>
       </ul>
     </section>

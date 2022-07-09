@@ -45,6 +45,7 @@ const Contact = () => {
 
   return (
     <>
+<<<<<<< HEAD
     
       <div className='contacto'>
         <div className='main'>
@@ -61,81 +62,96 @@ const Contact = () => {
           <form ref={form} onSubmit={sendEmail}>
             <p>
               <label for='nombre' class='colocar_nombre'>
+=======
+          <div class='w-full max-w-xs'>
+          <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" ref={form} onSubmit={sendEmail}>
+               <div class="mb-4">
+              <label  class="block text-gray-700 text-sm font-bold mb-2" for='nombre'>
+>>>>>>> a47df0f21f7e0eaef5670d712d2db56491606733
                 Nombre
                 <span className='obligatorio'>*</span>
               </label>
               <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type='text'
                 name='introducir_nombre'
                 id='nombre'
                 required='obligatorio'
                 placeholder='Escribe tu nombre'
               />
-            </p>
+              </div>
+            
 
-            <p>
-              <label for='email' class='colocar_email'>
+              <div class="mb-6">
+              <label for='email' class="block text-gray-700 text-sm font-bold mb-2">
                 Email
                 <span className='obligatorio'>*</span>
               </label>
               <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type='email'
                 name='introducir_email'
                 id='email'
                 required='obligatorio'
                 placeholder='Escribe tu Email'
               />
-            </p>
+              </div>
+            
 
-            <p>
+              <div class="mb-6">
               <label for='telefone' class='colocar_telefono'>
                 Teléfono
               </label>
               <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type='tel'
                 name='introducir_telefono'
                 id='telefono'
                 placeholder='Escribe tu teléfono'
               />
-            </p>
+              </div>
+            
 
-            <p>
+              <div class="mb-6">
               <label for='asunto' class='colocar_asunto'>
                 Asunto
                 <span className='obligatorio'>*</span>
               </label>
               <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type='text'
                 name='introducir_asunto'
                 id='assunto'
                 required='obligatorio'
                 placeholder='Escribe un asunto'
               />
-            </p>
+            </div>
 
-            <p>
+            <div class="mb-6">
               <label for='mensaje' class='colocar_mensaje'>
                 Mensaje
                 <span className='obligatorio'>*</span>
               </label>
               <textarea
                 name='introducir_mensaje'
-                class='texto_mensaje'
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id='mensaje'
                 required='obligatorio'
                 placeholder='Deja aquí tu comentario...'></textarea>
-            </p>
-
-            <button type='submit' name='enviar_formulario' id='enviar'>
+                </div>
+            
+              <div class="flex items-center justify-between">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"  type='submit' name='enviar_formulario' id='enviar'>
               <p>Enviar</p>
             </button>
+            </div>
 
             <p className='aviso'>
               <span class='obligatorio'> * </span>los campos son obligatorios.
             </p>
           </form>
         </div>
-      </div>
+      
     </>
   );
 };
