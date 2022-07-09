@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { API } from '../../services/api';
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import axios from 'axios';
+import { useParams } from 'react-router-dom';
 
 const AddNewPet = () => {
   const { register, handleSubmit } = useForm();
   const navigate = useNavigate();
+  const { id } = useParams();
+  const [pet, setPets] = useState({});  
   const onSubmit = (data) => {
     //formData.picture = formData.picture[0];
     console.log(data);
@@ -26,6 +31,17 @@ const AddNewPet = () => {
     });
     navigate('/gallery');
   };
+  useEffect(() =>  {
+    const getPetsById = async () => {
+      const res = await axios.get(
+        `https://back-node-protectora.vercel.app/pets/${id}`
+      );
+      setPets(res.data.pet);
+    }
+    console.log(setPets);
+    getPetsById();
+  },[]);
+
   return (
     <>
       <h1>Añadir mascota</h1>
