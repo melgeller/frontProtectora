@@ -1,0 +1,59 @@
+// =============================================================================
+// _grid.scss : Grids Views
+// MIT License
+// =============================================================================
+
+// =============================================================================
+// _grid.scss settings
+// =============================================================================
+@mixin base-grid(
+  $height,
+  $columns,
+  $columns-fractions,
+  $rows-fractions,
+  $grid-area,
+  $grid-gap
+) {
+  display: grid;
+  height: $height;
+  grid-template-columns: repeat($columns, $columns-fractions);
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas: $grid-area;
+  gap: $grid-gap;
+}
+
+.tablet-grid {
+  @include base-grid(
+    100vh,
+    4,
+    1,
+    0.2fr 1.5fr 1.2fr 0.8fr,
+    "nav nav nav nav" "main main main main" "about about about sidebar"
+      "contact contact contact sidebar" "footer footer footer footer",
+    0.5rem
+  );
+}
+
+.desktop-grid {
+  @include base-grid(
+    100vh,
+    4,
+    1,
+    0.2fr 1.5fr 1.2fr 0.8fr,
+    "nav nav nav nav" "main main main main" "about about about sidebar"
+      "contact contact contact sidebar" "footer footer footer footer",
+    0.5rem
+  );
+}
+
+.large-grid {
+  @include base-grid(
+    100vh,
+    4,
+    1,
+    0.2fr 1.5fr 1.2fr 0.8fr,
+    "nav nav nav nav" "main main main main" "about about about sidebar"
+      "contact contact contact sidebar" "footer footer footer footer",
+    0.5rem
+  );
+}
