@@ -17,10 +17,6 @@ export const APIHeaders = {
 
 export const API = axios.create({
   //baseURL: "http://localhost:8001",
-<<<<<<< HEAD
-  baseURL: "https://back-node-protectora.vercel.app/",
-=======
    baseURL: "https://back-node-protectora.vercel.app/",
->>>>>>> a47df0f21f7e0eaef5670d712d2db56491606733
   headers: APIHeaders,
 });
