@@ -1,6 +1,5 @@
 import React from 'react';
 import './NavBar.scss';
-import { Link } from 'react-router-dom';
 import { JwtContext } from '../../context/jwtContext';
 import { useContext } from 'react';
 import ButtonLogout from '../LoginComponent/ButtonLogout';
