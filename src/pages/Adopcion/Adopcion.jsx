@@ -23,6 +23,7 @@ export const Adopcion = () => {
       .then(
         (result) => {
           console.log(result.text);
+          e.target.reset()
           MySwal.fire({
             title: <strong>Gracias por contactar</strong>,
             html: <i>En breves, nos pondremos en contacto contigo</i>,

@@ -30,7 +30,7 @@ const Gallery = () => {
           </div>
           <p className='animalsP'>{pet.description}</p>
           <Link key={pet._id} to={`${pet._id}`}>
-            <p className='linkPerro'>Ver Detalle</p>
+            <p className='linkPerro'>Ver</p>
           </Link>
           {jwt && (
             <>
