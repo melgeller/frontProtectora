@@ -116,6 +116,12 @@
         align-items: center;
         justify-content: center;
         padding-bottom: 50px;
+        button{
+            &:hover{
+                background-color: #dd889a;
+                transition: 0.5s;
+            }
+        }
         h5{
             font-size: small;
             font-weight: 400;

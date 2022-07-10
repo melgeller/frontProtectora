@@ -64,6 +64,10 @@
             border: 3px solid white;
             color: white;
             margin-bottom: 10px;
+            &:hover{
+                background-color: #dd889a;
+                transition: 0.5s;
+            }
         }
         h5{
             font-size: x-small;

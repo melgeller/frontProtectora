@@ -66,19 +66,21 @@
             }
         }
         .linkPerro{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: rgb(217,217,217);
-            padding: 10px;
-            padding-inline: 10px;
-            margin-inline: 10px;
-            border: solid 1px black;
-            &:hover{
-                backface-visibility: hidden;
-                transform: scale(1.05);
-                opacity: 1;
-            }
+                margin-top: 0px;
+                width: 90px;
+                height: 40px;
+                border-radius: 10px;
+                background-color: #ff9eb3;
+                color: white;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    background-color: #dd889a;
+                    transition: 0.5s;
+                }
+            
         }
 
     }
