@@ -5,11 +5,13 @@ import { Link } from "react-router-dom";
 const Donaciones = () => {
   return (
     <>
-      <div className='goBack'>
-        <p className='main'>
-          <Link to='/'> --Volver a la vista principal</Link>
-        </p>
-      </div>
+        <div className="atras">
+        <div className='main'>
+          <Link to='/'>
+          <img src="../../../assets/flecha.png" alt="flecha"/>
+          </Link>
+        </div>
+        </div>
       <div className='donations'>
         <div className='titulo'>
           <h2>Formas de Colaborar</h2>

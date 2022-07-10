@@ -5,12 +5,13 @@ import { Link } from 'react-router-dom'
 const About = () => {
   return (
     <div class="about">
-    <div className='goBack'>
-    <li className='main'><Link to='/'> --Volver a la vista principal</Link></li>
+    <div className='main'>
+    <Link to='/'>
+    <img src="../../../assets/flecha.png" alt="flecha"/>
+    </Link>
     </div>
     <div className='titulo'>
     <h1>Sobre Nosotros</h1>
-    <h3>Ladrando</h3>
     <img src="../../assets/perro_5.webp" alt="foto about"/>
     </div>
     <p><span className='negrita'>LA PLATAFORMA IDEAL NO PARA TI, PARA TU MASCOTA.</span> Nuestra mision es crear vinculos con animales que aseguren...

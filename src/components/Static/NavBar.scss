@@ -1,3 +1,12 @@
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
 .navbar{
     width: 100%;
     height: 10%;
@@ -5,10 +14,14 @@
     align-items: center;
     background-color: #FFFDE8;
     img{
-        width: 90px;
+        width: 80px;
         margin: 10px;
+        border-radius: 60px;
+        &:hover{
+            animation: rotation 3s infinite linear;
+        }
     }
-    
+
 }
 
 .lista{

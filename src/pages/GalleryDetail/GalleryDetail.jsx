@@ -19,16 +19,17 @@ const GalleryDetail = () => {
       
       setTimeout(() => {
         setLoaded(true);
-      }, 2000);
+      }, 1000);
     };
     getPetsById();
-  });
+  },[]);
 
   return (
     <div className='details'>
-    <div className='goBack'>
-    <p className='main'><Link to='/gallery'> --Volver atrás</Link></p>
-    </div>
+    <div className='main'>
+    <Link to='/gallery'>
+    <img src="../../../assets/flecha.png" alt="flecha"/>
+    </Link></div>
       {pet ? (
         <>
           {loaded ? (

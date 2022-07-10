@@ -22,10 +22,12 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          e.target.reset()
           MySwal.fire({
             title: <strong>Gracias por contactar</strong>,
             html: <i>En breves, nos pondremos en contacto contigo</i>,
             icon: "success",
+            
           });
         },
         (error) => {
@@ -39,11 +41,16 @@ const Contact = () => {
         }
       );
   };
+
+
   return (
     <>
-      <div className='goBack'>
+    
+      <div className='barraContacto'>
         <p className='main'>
-          <Link to='/'> --Volver a la vista principal</Link>
+          <Link to='/'>
+          <img src="../../../assets/flecha.png" alt="flecha"/>
+          </Link>
         </p>
       </div>
       <div className='contact_form'>

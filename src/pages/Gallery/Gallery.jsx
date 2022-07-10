@@ -6,16 +6,17 @@ import { Link } from 'react-router-dom';
 import { JwtContext } from '../../context/jwtContext';
 const Gallery = () => {
   const { pets } = useContext(PetContext);
+  console.log("esto son pets",pets);
   const { jwt } = useContext(JwtContext);
+  console.log("esto es jwt",jwt);
   return (
     <div className='gallery'>
-      <div className='goBack'>
-        <p className='main'>
-          <Link to='/'> --Volver a la vista principal</Link>
-        </p>
-        <p className='main filtro'>Filtro</p>
-      </div>
-
+      <p className='main'>
+        <Link to='/'>
+          <img src='../../../assets/flecha.png' alt='flecha' />
+        </Link>
+        <p>Filtro</p>
+      </p>
       {pets.map((pet) => (
         <div className='carta'>
           <img src={pet.picture} alt={pet.name} />
@@ -28,12 +29,14 @@ const Gallery = () => {
           </div>
           <p className='animalsP'>{pet.description}</p>
           <Link key={pet._id} to={`${pet._id}`}>
-            <p className='linkPerro'>ver bicho</p>
+            <p className='linkPerro'>Ver {pet.name}</p>
           </Link>
           {jwt && (
-            <Link key={pet._id} to={`/admin/${pet._id}`}>
-              <p className='linkPerro'>editar {pet.name}</p>
-            </Link>
+            <>
+              <Link key={pet._id} to={`/admin/${pet._id}`}>
+                <p className='linkPerro'>Editar {pet.name}</p>
+              </Link>
+            </>
           )}
         </div>
       ))}

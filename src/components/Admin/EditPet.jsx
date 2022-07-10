@@ -1,35 +1,42 @@
-import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
-import { API } from '../../services/api';
+import React,  { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { API } from '../../services/api'
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
-import AddBlogs from './AddBlogs';
-
-const AddNewPet = () => {
+const EditPet = () => {
   const { register, handleSubmit } = useForm();
   const navigate = useNavigate();
   const { id } = useParams();
   const [pet, setPets] = useState({});  
-  const onSubmit = (data) => {
-    //formData.picture = formData.picture[0];
-    console.log(data);
+
+  useEffect(() => {
+    const getPetsById = async () => {
+      const res = await axios.get(
+        `https://back-node-protectora.vercel.app/pets/${id}`
+        );
+        setPets(res.data.pet);
+    };
+    getPetsById();
+  });
+
+  const onSubmit = (newdata) => {
+    console.log(newdata);
     const formData = new FormData();
-    formData.append('name', data.name);
-    formData.append('type', data.type);
-    formData.append('sex', data.sex);
-    formData.append('size', data.size);
-    formData.append('age', data.age);
-    formData.append('adopted', data.adopted);
-    formData.append('description', data.description);
-    formData.append('picture', data.picture[0]);
-    formData.append('picture1', data.picture1[0]);
-    formData.append('picture2', data.picture2[0]);
-    console.log(formData);
-    API.post('/pets/', formData).then((res) => {
-      console.log('esto es res', res);
+    formData.append('name', newdata.name);
+    formData.append('type', newdata.type);
+    formData.append('sex', newdata.sex);
+    formData.append('size', newdata.size);
+    formData.append('age', newdata.age);
+    formData.append('adopted', newdata.adopted);
+    formData.append('description', newdata.description);
+    formData.append('picture', newdata.picture[0]);
+    formData.append('picture1', newdata.picture1[0]);
+    formData.append('picture2', newdata.picture2[0]);
+    console.log("esto es formdata",formData);
+    API.patch(`/pets/${id}`, formData).then((res) => {
     });
     navigate('/gallery');
   };
@@ -40,19 +47,19 @@ const AddNewPet = () => {
       );
       setPets(res.data.pet);
     }
-    console.log(setPets);
     getPetsById();
   },[]);
 
   return (
     <>
-      <h1>Añadir mascota</h1>
+      <h1>Editar mascota</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className='formField'>
           <label htmlFor='name'>Nombre de mascota</label>
           <input
             type='text'
             id='name'
+            placeholder={pet.name}
             {...register('name', { required: true })}
           />
         </div>
@@ -62,8 +69,17 @@ const AddNewPet = () => {
             name='type'
             id='type'
             {...register('type', { required: true })}>
-            <option value='perro'>Perro</option>
-            <option value='gato'>Gato</option>
+            {pet.type === 'perro' && (
+              <>
+              <option value='perro' selected>Perro</option>
+              <option value='gato'>Gato</option>
+              </>
+            )} : {pet.type === 'gato' && (
+              <>
+              <option value='perro'>Perro</option>
+              <option value='gato' selected>Gato</option>
+              </>
+            )}
           </select>
         </div>
         <div className='formField'>
@@ -89,6 +105,7 @@ const AddNewPet = () => {
           <input
             type='text'
             id='age'
+            value={pet.age}
             {...register('age', { required: true })}
           />
         </div>
@@ -117,6 +134,7 @@ const AddNewPet = () => {
             name='description'
             rows='4'
             cols='50'
+            value={pet.description}
             {...register('description', { required: true })}>
             Pon aquí la descripción de tu mascota.
           </textarea>
@@ -142,12 +160,10 @@ const AddNewPet = () => {
             {...register('picture2', { required: false })}
           />
         </div>
-        <button type='submit'>Añadir mascota</button>
-      </form>
-      <AddBlogs></AddBlogs>
-      
+        <button type='submit'>Editar mascota</button>
+      </form>      
     </>
   );
 };
 
-export default AddNewPet;
+export default EditPet

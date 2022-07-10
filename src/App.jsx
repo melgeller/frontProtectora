@@ -15,7 +15,7 @@ import Login from './pages/Login/Login';
 import { PetContextProvider } from './context/context';
 import { RequireAuth } from './components/LoginComponent/RequireAuth';
 import { JwtContext } from './context/jwtContext';
-import ButtonLogout from './components/LoginComponent/ButtonLogout';
+import Adopcion from './pages/Adopcion/Adopcion';
 
 function App() {
   const [jwt, setJwt] = useState(localStorage.getItem('token'));
@@ -44,7 +44,15 @@ function App() {
                     <Forms />
                   </RequireAuth>
                 }></Route>
+              <Route
+                path='/admin/:id'
+                element={
+                  <RequireAuth>
+                    <Forms />
+                  </RequireAuth>
+                }></Route>
               <Route path='/login' element={<Login />} />
+              <Route path='/adopcion' element={<Adopcion></Adopcion>}></Route>
             </Routes>
             <Footer></Footer>
           </Router>
