@@ -3,7 +3,7 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <div className='footer'>
+    <footer className='footer'>
       <ul>
         <li>
           <a href='https://www.instagram.com/milongomilo/'>
@@ -20,8 +20,12 @@ const Footer = () => {
             <img src='../../assets/gorjeo (2).png' alt='tw' />
           </a>
         </li>
+       
       </ul>
-    </div>
+      <div className="copy ">
+      <p>Copyright &copy; 2022, Upgrade Hub <a href="<Link to='/about'>">🐾</a></p>
+      </div>
+    </footer>
   );
 };
 
