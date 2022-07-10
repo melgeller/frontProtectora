@@ -48,7 +48,7 @@ const GalleryDetail = () => {
             
           ) : (
             <div className='gif'>
-              <img src='../../assets/loaded.gif' alt='loaded'></img>
+              <img src='../../assets/gif4.gif' alt='loaded'></img>
             </div>
           )}
         </>
