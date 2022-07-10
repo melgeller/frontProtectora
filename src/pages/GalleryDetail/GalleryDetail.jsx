@@ -34,21 +34,27 @@ const GalleryDetail = () => {
         <>
           {loaded ? (
             <div className="galleryDetail">
+            <div className="pictureDetail">
               <img src={pet.picture} alt={pet.name}></img>
+              </div>
+              <div className="detailsDetail">
               <p>{pet.name}</p>
               <p>{pet.sex}</p>
               <p>{pet.age}</p>
               <p>{pet.size}</p>
               <p>{pet.adopted}</p>
+              </div>
               <div className="textDetail">
               <p>{pet.description}</p>
               </div>
+              <div className="buttonDetail">
               <p><Link to='/adopcion'>Adoptar</Link></p>
+              </div>
             </div> 
             
           ) : (
             <div className='gif'>
-              <img src='../../assets/loaded.gif' alt='loaded'></img>
+              <img src='../../assets/gif4.gif' alt='loaded'></img>
             </div>
           )}
         </>

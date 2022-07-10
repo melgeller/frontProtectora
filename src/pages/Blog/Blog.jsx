@@ -13,12 +13,16 @@ const Blog = () => {
     <div className='main'><Link to='/'>
     <img src="../../../assets/flecha.png" alt="flecha"/>
     </Link></div>
+    <div className='intro'>
+      <h2>Bienvenido </h2>
+      <h3>a nuestro blog de Animalitos</h3>
+    </div>
     </div>
     {blogs.map((blog)=> (
       <div className='carta-blog'>
        <img src={blog.picture} alt={blog.title}/>
-        <p>{blog.title}</p>
-        <p>{blog.content}</p>
+        <h4>{blog.title}</h4>
+        <p className='hover'>{blog.content}</p>
 
       </div> 
     ))}

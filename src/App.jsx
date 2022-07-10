@@ -16,6 +16,7 @@ import { PetContextProvider } from './context/context';
 import { RequireAuth } from './components/LoginComponent/RequireAuth';
 import { JwtContext } from './context/jwtContext';
 import Adopcion from './pages/Adopcion/Adopcion';
+import ChatBo from './components/Static/ChatBo';
 
 function App() {
   const [jwt, setJwt] = useState(localStorage.getItem('token'));
@@ -54,6 +55,7 @@ function App() {
               <Route path='/login' element={<Login />} />
               <Route path='/adopcion' element={<Adopcion></Adopcion>}></Route>
             </Routes>
+            <ChatBo></ChatBo>
             <Footer></Footer>
           </Router>
         </PetContextProvider>

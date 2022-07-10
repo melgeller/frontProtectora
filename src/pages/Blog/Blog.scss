@@ -1,19 +1,63 @@
-.blog{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    
+.blog {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10git0px;
 
-    .carta-blog{
-        margin-top: 20px;
-        width: 20vw;
-        gap: 10px;
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+    background: rgb(255,253,232);
+    background: linear-gradient(180deg, rgba(255,253,232,1) 0%, rgba(255,177,71,1) 70%);
+    
+  }
+
+  .carta-blog {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 20px;
+    margin-top: 50px;
+    width:550px;
+    height: 300px;
+    border-radius: 10px;
+   
+    gap: 10px;
+    &:hover {
+        height: auto;
+        padding: 60px;
+        transition: 2s;
         
-        
-        
-        img{
-            width: 100%;
-            object-fit: contain;
+        .hover {
+          width: 60%;
+          transition: 0.5s;
+          display: inline;
+          
         }
+        img{
+            height: 20%;
+        }
+      }
+    h4{
+        font-size: 80%;
+        padding: 10px;
+        text-align: center;
     }
+    .hover {
+        
+        text-align: center;
+        display: none;
+        
+      }
+
+    img {
+      width: 100%;
+      height: 60%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
 }

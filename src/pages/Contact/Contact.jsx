@@ -53,11 +53,11 @@ const Contact = () => {
           </Link>
         </p>
       </div>
+      <div className="formulario-entero">
       <div className='contact_form'>
-        <div class='formulario'>
-          <h1>Formulario de contacto</h1>
-          <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
-
+        <div className='formulario'>
+          <h1>Contáctanos</h1>
+          <h4>¡Escríbenos y nos pondremos en contacto contigo!</h4>
           <form ref={form} onSubmit={sendEmail}>
             <p>
               <label for='nombre' class='colocar_nombre'>
@@ -130,12 +130,14 @@ const Contact = () => {
               <p>Enviar</p>
             </button>
 
-            <p className='aviso'>
+            <h5 className='aviso'>
               <span class='obligatorio'> * </span>los campos son obligatorios.
-            </p>
+            </h5>
           </form>
+          </div>
+          <img src="../../../assets/shibainu.jpg" alt="formulariofondo"/>
         </div>
-      </div>
+        </div>
     </>
   );
 };
