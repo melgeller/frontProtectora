@@ -57,7 +57,7 @@ const Contact = () => {
       <div className='contact_form'>
         <div className='formulario'>
           <h1>Contáctanos</h1>
-          <h4>¡Escríbenos y nos pondremos en contacto contigo enseguida!</h4>
+          <h4>¡Escríbenos y nos pondremos en contacto contigo!</h4>
           <form ref={form} onSubmit={sendEmail}>
             <p>
               <label for='nombre' class='colocar_nombre'>
