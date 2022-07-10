@@ -40,6 +40,7 @@ const EditPet = () => {
     });
     navigate('/gallery');
   };
+
   useEffect(() =>  {
     const getPetsById = async () => {
       const res = await axios.get(
@@ -59,7 +60,8 @@ const EditPet = () => {
           <input
             type='text'
             id='name'
-            placeholder={pet.name}
+            value={pet.name}
+            onChange={ev => setPets({...pet, name: ev.target.value})}
             {...register('name', { required: true })}
           />
         </div>
@@ -85,8 +87,17 @@ const EditPet = () => {
         <div className='formField'>
           <label htmlFor='sex'>Sexo</label>
           <select name='sex' id='sex' {...register('sex', { required: true })}>
-            <option value='macho'>Macho</option>
-            <option value='hembra'>Hembra</option>
+          {pet.sex === 'macho' && (
+            <>
+              <option value='macho' selected>Macho</option>
+              <option value='hembra'>Hembra</option>
+            </>
+          )} : {pet.sex === 'hembra' && (
+            <>
+              <option value='macho' >Macho</option>
+              <option value='hembra' selected>Hembra</option>
+            </>
+          )}
           </select>
         </div>
         <div className='formField'>
@@ -156,11 +167,12 @@ const EditPet = () => {
           <input
             type='file'
             id='picture'
+            
             multiple
             {...register('picture2', { required: false })}
           />
         </div>
-        <button type='submit'>Editar mascota</button>
+        <button type='submit' className='buttonh'>Editar mascota</button>
       </form>      
     </>
   );
