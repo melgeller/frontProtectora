@@ -5,25 +5,14 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import './AddBlogs.scss'
+import './EditBlog.scss'
 
 
 const EditBlog = () => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
   const navigate = useNavigate();
   const { id } = useParams();
   const [blog, setBlogs]= useState({});  
-
-  useEffect(() => {
-    const getBlogsById = async () => {
-      const res = await axios.get(
-        `https://back-node-protectora.vercel.app/blogs/${id}`
-        );
-        console.log(res.data.Blog)
-        setBlogs(res.data.Blog);
-    };
-    getBlogsById();
-  });
 
   const onSubmit = (newdata) => {
     console.log(newdata);
@@ -33,7 +22,7 @@ const EditBlog = () => {
     formData.append('date', newdata.date);
     formData.append('picture', newdata.picture[0]);
     console.log("esto es formdata",formData);
-    API.patch(`/blogs/${id}`, formData).then((res) => {
+    API.patch(`http://localhost:8001/blogs/${id}`, formData).then((res) => {
     });
     navigate('/gallery');
   };
@@ -41,15 +30,20 @@ const EditBlog = () => {
   useEffect(() =>  {
     const getBlogsById = async () => {
       const res = await axios.get(
-        `https://back-node-protectora.vercel.app/blogs/${id}`
+        `http://localhost:8001/blogs/${id}`
       );
       setBlogs(res.data.Blog);
     }
     getBlogsById();
   },[]);
+  useEffect(() => {
+    
+    reset(blog);
+}, [blog]);
 
   return (
     <>
+    <div className='añadirNoticiasForm'>
       <h1>Editar Blog</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className='formField'>
@@ -57,7 +51,6 @@ const EditBlog = () => {
           <input
             type='text'
             id='title'
-            value={blog.title}
             onChange={ev => setBlogs({...blog, title: ev.target.value})}
 
             {...register('title', { required: true })}
@@ -73,13 +66,12 @@ const EditBlog = () => {
         </div>
        
         <div className='formField'>
-          <label htmlFor='content'>Decripción: </label>
+          <label htmlFor='content'>Descripción: </label>
           <textarea
             id='content'
             name='content'
             rows='4'
             cols='50'
-            value={blog.content}
             onChange={ev => setBlogs({...blog, content: ev.target.value})}
 
 
@@ -99,6 +91,7 @@ const EditBlog = () => {
         </div>
         <button type='submit'>Añadir blog</button>
       </form>
+      </div>
       </>
   );
 };

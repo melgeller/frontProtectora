@@ -44,7 +44,7 @@ const AddBlogs = () => {
         </div>
        
         <div className='formField'>
-          <label htmlFor='content'>Decripción: </label>
+          <label htmlFor='content'>Descripción: </label>
           <textarea
             id='content'
             name='content'

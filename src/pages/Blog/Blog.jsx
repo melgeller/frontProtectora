@@ -25,7 +25,7 @@ const Blog = () => {
       confirmButtonText: '¡Si, borrar!',
     }).then((result) => {
       if (result.isConfirmed) {
-        API.delete(`/blogs/${id}`).then((res) => {});
+        API.delete(`http://localhost:8001/blogs/${id}`).then((res) => {});
         Swal.fire(
           `¡tu entrada ha sido borrado!`,
           'Tu entrada ha sido borrada de la BBDD.',
@@ -43,8 +43,7 @@ const Blog = () => {
     <img src="../../../assets/flecha.png" alt="flecha"/>
     </Link></div>
     <div className='intro'>
-      <h2>Bienvenido </h2>
-      <h3>a nuestro blog de Animalitos</h3>
+      <h2>Noticias</h2>
     </div>
     </div>
 
@@ -56,14 +55,16 @@ const Blog = () => {
         <p className='hover'>{blog.content}</p>
         {jwt && (
             <>
+            <div className='textoLinks'>
               <Link key={blog._id} to={`/adminblog/${blog._id}`}>
-                <p className='linkBlog'>Editar {blog.title}</p>
+                <p className='linkBlog'>Editar</p>
               </Link>
               <p
                 className='linkBlog'
                 onClick={(ev) => deleteBlog(`${blog._id}`, `${blog.title}`)}>
-                Borrar {blog.title}
+                Borrar
               </p>
+              </div>
             </>
           )}
 

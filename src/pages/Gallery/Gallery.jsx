@@ -30,7 +30,7 @@ const Gallery = () => {
       confirmButtonText: '¡Si, borrar!',
     }).then((result) => {
       if (result.isConfirmed) {
-        API.delete(`/pets/${id}`).then((res) => {});
+        API.delete(`http://localhost:8001/pets/${id}`).then((res) => {});
         Swal.fire(
           `¡${name} ha sido borrado!`,
           'Tu mascota ha sido borrada de la BBDD.',

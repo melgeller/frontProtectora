@@ -1,23 +1,15 @@
+
 import React from 'react';
 import './NavBar.scss';
-import { JwtContext } from '../../context/jwtContext';
+import { JwtContext } from '../../../context/jwtContext';
 import { useContext } from 'react';
-import ButtonLogout from '../LoginComponent/ButtonLogout';
-import SideBar from '../Navbar/SideBar';
+import ButtonLogout from '../../LoginComponent/ButtonLogout';
 import { NavLink } from 'react-router-dom';
 
-const NavBar = () => {
+const NavLinks = () => {
   const { jwt } = useContext(JwtContext);
   const activeClassName = 'selected';
-  return (
-    <div className='navbar' id='outer-container'>
-      <SideBar
-        className='SideBar'
-        pageWrapId={'page-wrap'}
-        outerContainerId={'outer-container'}
-      />
-      <img src='../../assets/logoperro.png' alt='logoperro' />
-      <nav className='lista'>
+    return (
         <ul>
           <li>
             <NavLink
@@ -100,9 +92,7 @@ const NavBar = () => {
             </>
           )}
         </ul>
-      </nav>
-    </div>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavLinks
