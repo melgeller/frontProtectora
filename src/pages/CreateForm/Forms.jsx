@@ -7,8 +7,8 @@ import { useContext } from 'react';
 
 const Forms = () => {
   const { id } = useParams();
-  console.log ("este es el id que me pasan",id);
-  console.log("esto es useContext",useContext);
+  console.log ("id de la mascota",id);
+
   return (
     <>
       <div>Forms</div>
