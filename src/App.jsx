@@ -52,6 +52,13 @@ function App() {
                     <Forms />
                   </RequireAuth>
                 }></Route>
+                 <Route
+                path='/admin/:tipo/:id/'
+                element={
+                  <RequireAuth>
+                    <Forms />
+                  </RequireAuth>
+                }></Route>
               <Route path='/login' element={<Login />} />
               <Route path='/adopcion' element={<Adopcion></Adopcion>}></Route>
             </Routes>
