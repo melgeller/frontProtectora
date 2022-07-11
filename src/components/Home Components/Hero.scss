@@ -5,10 +5,10 @@
     width: 16em;
     margin: 0 auto;
     border-right: 2px solid rgba(187, 72, 72, 0.75);
-    font-size: 1.6rem;
+    font-size:1.8rem;
     color: #FFB147;
     text-align: center;
-    border-top: #FFB147;
+    
     text-align: center;
     white-space: nowrap;
     overflow: hidden;transform: translateY(-50%);
@@ -53,18 +53,13 @@
     font-size: 18px;
 
     img {
-
-        @media screen {
-            max-width: 700px;
-            min-width: 100px;
-        }
-
-        width: 180px;
+        
+        width: 280px;
         height:200px ;
         -webkit-box-shadow: 2px 1px 18px -2px #000000; 
         box-shadow: 2px 1px 18px -2px #000000;
         border-radius: 20px;
-        margin: 6%;
+        margin: 4%;
 
     
     }
@@ -72,7 +67,7 @@
     .ph{
        
         text-align: justify;
-        padding: 6%;
+        margin: 4%;
         font-size: medium;
 
     }
