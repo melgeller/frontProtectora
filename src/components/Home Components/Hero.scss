@@ -1,5 +1,13 @@
 
+
+
+.homepri{
+  
+    margin-top: 5%;
+}
 .line {
+
+    
     position: relative;
     top: 50%;
     width: 16em;
@@ -45,11 +53,13 @@
 }
 
 .second{
+
+
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
+    
     font-size: 18px;
 
     img {
@@ -69,6 +79,7 @@
         text-align: justify;
         margin: 4%;
         font-size: medium;
+        
 
     }
 }
@@ -84,10 +95,7 @@
     flex-direction: row;
 }
 
-.data-container {
-    margin-top: 10%;
-    margin-bottom: 5%;
-}
+
 
 .buttonh{
     a{
