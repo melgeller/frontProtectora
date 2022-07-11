@@ -1,4 +1,12 @@
 .numeracionlu {
+  @media (max-width:600px)  {
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    text-align: center;
+  
+  
+}
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -17,8 +25,17 @@ text-align: center;
 
 
 .ps{
+  @media (max-width:600px)  {
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    text-align: center;
+
+  
+}
   text-align:left;
   padding: 3%;
+  font-size: x-large;
   
 }
 
@@ -35,8 +52,12 @@ text-align: center;
   
 
   img{
-    height: 120px;
-    width: 120px;
+    @media (max-width:600px)  {
+      height: 100px;
+      width: 100px;
+  }
+    height: 140px;
+    width: 140px;
   }
 }
 

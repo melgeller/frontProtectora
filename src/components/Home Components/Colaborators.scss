@@ -10,7 +10,11 @@
 }
 
 img {
-    width: 35%;
+    @media (max-width:600px)  {
+        margin: 5%;
+        width: 45%;
+    }
+    width: 65%;
 }
 
 
