@@ -1,5 +1,5 @@
 import './App.scss';
-import NavBar from './components/Static/NavBar';
+import NavBar from './components/Static/Navbar/NavBar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 import Footer from './components/Static/Footer';
