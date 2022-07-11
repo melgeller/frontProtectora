@@ -1,8 +1,9 @@
-ul {
+.numeracionlu {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-right: 3%;
+  margin: 5%;
+ 
 
 
 }
@@ -11,32 +12,28 @@ ul {
 margin-top: 10%;
 text-align: center;
 
+
 }
 
 
 
+
+
 .firstdiv {
-  margin: 5%;
+ 
   text-align: center;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-}
-
-#circulo{
-  height:100px;
-  width:100px;
-  background:#FF9EB3;
-  -moz-border-radius:50px;
-  -webkit-border-radius:50px;
-  border-radius:50px;
-
-  #numcircu {
-    text-align: center;
-    font-size: x-large;
+ 
+ 
   
+
+  img{
+    height: 100px;
+    width: 100px;
   }
-
-
 }
+
+
