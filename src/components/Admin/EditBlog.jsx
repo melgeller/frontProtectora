@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-
+import './EditBlog.scss'
 
 const EditBlog = () => {
   const { register, handleSubmit } = useForm();
@@ -49,6 +49,7 @@ const EditBlog = () => {
 
   return (
     <>
+    <div className='editarBlog'>
       <h1>Editar Blog</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className='formField'>
@@ -98,6 +99,7 @@ const EditBlog = () => {
         </div>
         <button type='submit'>Añadir blog</button>
       </form>
+      </div>
       </>
   );
 };
