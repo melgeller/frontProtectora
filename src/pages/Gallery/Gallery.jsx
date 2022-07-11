@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useContext } from 'react';
 import { PetContext } from '../../context/context';
 import './Gallery.scss';
@@ -7,9 +7,16 @@ import { JwtContext } from '../../context/jwtContext';
 import { API } from '../../services/api';
 import Swal from 'sweetalert2';
 
+
 const Gallery = () => {
   const { pets } = useContext(PetContext);
   const { jwt } = useContext(JwtContext);
+  const [filter,setFilter]=useState("");
+  const [filteredPets,setFilteredPets]=useState([])
+  useEffect(()=>{
+    setFilteredPets([...pets])
+    
+  },[pets])
 
   const deletePet = (id, name) => {
     console.log({ id });
@@ -40,9 +47,13 @@ const Gallery = () => {
         <Link to='/'>
           <img src='../../../assets/flecha.png' alt='flecha' />
         </Link>
-        <p>Filtro</p>
+        <div className='botonesAlfredo'>
+        <p className='linkPerro' onClick={()=>setFilter("perro")}>perros</p>
+        <p className='linkPerro' onClick={()=>setFilter("gato")}>gatos</p>
+        <p className='linkPerro' onClick={()=>setFilter("")}>todos</p>
+        </div>
       </p>
-      {pets.map((pet) => (
+      {filteredPets.filter((pet)=>pet.type.toLowerCase().includes(filter)).map((pet) => (
         <div className='carta'>
           <img src={pet.picture} alt={pet.name} />
           <div className='texto-animales'>
