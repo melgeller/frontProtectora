@@ -1,4 +1,7 @@
 .formulariosMain{
+    @media (max-width:600px)  {
+        font-size:small; 
+        }
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
@@ -6,6 +9,9 @@
 }
 
 .añadirNoticiasForm{
+    @media (max-width:600px)  {
+        font-size: small; 
+        }
     background-color: white;
     width: 35%;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
@@ -17,6 +23,10 @@
     padding-bottom: 30px;
 
     .formField2{
+        @media (max-width:600px)  {
+            font-size:small; 
+            
+            }
         display: flex;
             flex-direction: column;
             gap:20px;
@@ -25,6 +35,9 @@
     }
 
     .formField{
+        @media (max-width:600px)  {
+            font-size: x-small; 
+            }
         display: flex;
         flex-direction: column;
         gap:20px;
@@ -34,9 +47,18 @@
         margin-bottom: 40px;
     }
     label{
+        @media (max-width:600px)  {
+            font-size: small; 
+            
+            }
         font-weight: 500;
     }
     input{
+        @media (max-width:600px)  {
+            width: 10px;
+            height: 20px;
+            font-size: 10px;
+        }
         display: flex;
         margin-bottom: 20px;
         border: 3px solid white;
@@ -44,6 +66,11 @@
         width: 400px;
     }
     textarea{
+        @media (max-width:600px)  {
+            font-size: small; 
+            width: 20%;
+            height: 180px;
+            }
         display: flex;
         width: 90%;
         height: 180px;

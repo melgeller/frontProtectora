@@ -12,9 +12,6 @@ export const APIHeaders = {
 };
 
 
-
-
-
 export const API = axios.create({
 
   //baseURL: "http://localhost:8001",
