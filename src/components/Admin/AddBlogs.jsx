@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { API } from '../../services/api';
+import './AddBlogs.scss'
 
 
 const AddBlogs = () => {
@@ -24,16 +25,17 @@ const AddBlogs = () => {
       };
   return (
     <>
+    <div className='añadirNoticiasForm'>
     <h1>Añadir entrada</h1>
       <form onSubmit={handleSubmit(onSubmi)}>
         <div className='formField'>
-          <label htmlFor='title'>titulo</label>
+          <label htmlFor='title'>Título: </label>
           <input
             type='text'
             id='title'
             {...register('title', { required: true })}
           />
-          <label htmlFor='date'>fecha</label>
+          <label htmlFor='date'>Fecha: </label>
           <input
             type='text'
             id='date'
@@ -42,7 +44,7 @@ const AddBlogs = () => {
         </div>
        
         <div className='formField'>
-          <label htmlFor='content'>Decripcion</label>
+          <label htmlFor='content'>Decripción: </label>
           <textarea
             id='content'
             name='content'
@@ -52,8 +54,8 @@ const AddBlogs = () => {
             
           </textarea>
         </div>
-        <div className='formField'>
-          <label htmlFor='picture'>Select files:</label>
+        <div className='formField2'>
+          <label htmlFor='picture'>Elegir Archivos:</label>
           <input
             type='file'
             id='picture'
@@ -64,6 +66,7 @@ const AddBlogs = () => {
         </div>
         <button type='submit'>Añadir blog</button>
       </form>
+      </div>
       </>
   )
 }
