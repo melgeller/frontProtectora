@@ -37,6 +37,7 @@
         width: 91vw;
        background-color: white;
         gap: 10px;
+        border-radius: 10px;
         
         
         img{
@@ -46,6 +47,7 @@
             width: 250px;
             height: 200px;
             min-width: 250px;
+            border-radius: 10px;
             
             object-fit:cover;
             
@@ -67,9 +69,10 @@
             }
         }
         .linkPerro{
-            
+            font-size: small;
+            cursor: pointer;
                 margin-top: 0px;
-                width: 90px;
+                width: 130px;
                 height: 40px;
                 border-radius: 10px;
                 background-color: #ff9eb3;

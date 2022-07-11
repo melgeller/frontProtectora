@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import './EditPet.scss'
 
 const EditPet = () => {
   const { register, handleSubmit, reset } = useForm();
@@ -47,10 +48,12 @@ const EditPet = () => {
 
   return (
     <>
+    <div className='editarMascota'>
       <h1>Editar mascota</h1>
+      <div className='formularioEditMascota'>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className='formField'>
-          <label htmlFor='name'>Nombre de mascota</label>
+          <label htmlFor='name'>Nombre de mascota: </label>
           <input
             type='text'
             id='name'
@@ -60,7 +63,7 @@ const EditPet = () => {
           />
         </div>
         <div className='formField'>
-          <label htmlFor='type'>Tipo de mascota</label>
+          <label htmlFor='type'>Tipo de mascota: </label>
           <select
             name='type'
             id='type'
@@ -79,7 +82,7 @@ const EditPet = () => {
           </select>
         </div>
         <div className='formField'>
-          <label htmlFor='sex'>Sexo</label>
+          <label htmlFor='sex'>Sexo: </label>
           <select name='sex' id='sex' {...register('sex', { required: true })}>
           {pet.sex === 'macho' && (
             <>
@@ -95,7 +98,7 @@ const EditPet = () => {
           </select>
         </div>
         <div className='formField'>
-          <label htmlFor='size'>Tamaño</label>
+          <label htmlFor='size'>Tamaño: </label>
           <select
             name='size'
             id='size'
@@ -106,7 +109,7 @@ const EditPet = () => {
           </select>
         </div>
         <div className='formField'>
-          <label htmlFor='age'>Edad</label>
+          <label htmlFor='age'>Edad: </label>
           <input
             type='text'
             id='age'
@@ -114,8 +117,8 @@ const EditPet = () => {
             {...register('age', { required: true })}
           />
         </div>
-        <div className='formField'>
-          <label htmlFor='adopted'>Adoptado</label>
+        <div className='formField2'>
+          <label htmlFor='adopted'>Adoptado: </label>
           <input
             type='radio'
             name='adopted'
@@ -133,7 +136,7 @@ const EditPet = () => {
           <label for='adopted'>No</label>
         </div>
         <div className='formField'>
-          <label htmlFor='description'>Decripcion</label>
+          <label htmlFor='description'>Descripción: </label>
           <textarea
             id='description'
             name='description'
@@ -145,7 +148,7 @@ const EditPet = () => {
           </textarea>
         </div>
         <div className='formField'>
-          <label htmlFor='picture'>Select files:</label>
+          <label htmlFor='picture'>Elegir Archivos: </label>
           <input
             type='file'
             id='picture'
@@ -166,8 +169,10 @@ const EditPet = () => {
             {...register('picture2', { required: false })}
           />
         </div>
-        <button type='submit' className='buttonh'>Editar mascota</button>
-      </form>      
+        <button type='submit'>Editar</button>
+      </form>
+      </div>  
+      </div>    
     </>
   );
 };

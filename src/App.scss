@@ -6,6 +6,7 @@
 }
 body{
   background-color: #FAFAFA;
+  height: 85.5vh;
 }
 li{
   list-style-type: none;
@@ -13,4 +14,11 @@ li{
 a{
   text-decoration: none;
   cursor: pointer;
+}
+.App{
+  height: 100%;
+}
+
+.root{
+  height: 100%;
 }
