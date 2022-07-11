@@ -3,11 +3,14 @@
 
 .homepri{
   
-    margin-top: 5%;
+    margin-top: 10%;
+  
 }
 .line {
 
-    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     position: relative;
     top: 50%;
     width: 16em;
@@ -20,7 +23,7 @@
     text-align: center;
     white-space: nowrap;
     overflow: hidden;transform: translateY(-50%);
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: 400;
     
 }
@@ -50,11 +53,17 @@
 
 .titulo{
    text-align: center;
+   
 }
 
 .second{
-
-
+ @media screen {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-size: medium;
+ }
+    
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -65,7 +74,7 @@
     img {
         
         width: 280px;
-        height:200px ;
+        height:240px ;
         -webkit-box-shadow: 2px 1px 18px -2px #000000; 
         box-shadow: 2px 1px 18px -2px #000000;
         border-radius: 20px;
