@@ -70,8 +70,9 @@ const Gallery = () => {
           </Link>
           {jwt && (
             <>
-              <Link key={pet._id} to={`/admin/${pet._id}`}>
-                <p className='linkPerro'>Editar</p>
+
+              <Link key={pet._id} to={`/adminmascota/${pet._id}`}>
+                <p className='linkPerro'>Editar {pet.name}</p>
               </Link>
               <p
                 className='linkPerro'

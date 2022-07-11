@@ -78,11 +78,20 @@ const NavBar = () => {
               <li>|</li>
               <li>
                 <NavLink
-                  to='/admin'
+                  to='/adminblog'
                   className={({ isActive }) =>
                     isActive ? activeClassName : undefined
                   }>
-                  Administración
+                  Blog
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to='/adminmascota'
+                  className={({ isActive }) =>
+                    isActive ? activeClassName : undefined
+                  }>
+                  Mascotas
                 </NavLink>
               </li>
               <li>

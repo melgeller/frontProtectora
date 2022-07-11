@@ -56,7 +56,7 @@ const Blog = () => {
         <p className='hover'>{blog.content}</p>
         {jwt && (
             <>
-              <Link key={blog._id} to={`/admin/${blog._id}`}>
+              <Link key={blog._id} to={`/adminblog/${blog._id}`}>
                 <p className='linkBlog'>Editar {blog.title}</p>
               </Link>
               <p
