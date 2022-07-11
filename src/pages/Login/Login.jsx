@@ -1,13 +1,12 @@
 import React from 'react';
 import LoginForm from '../../components/LoginComponent/LoginForm';
+import './Login.scss'
+
 const Login = () => {
   return (
-    <section className='pfContainer'>
-      <div className='form login'>
-        <h2>Login</h2>
+      <div className='formLogin'>
         <LoginForm />
       </div>
-    </section>
   );
 };
 

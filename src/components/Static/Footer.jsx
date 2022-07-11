@@ -6,25 +6,22 @@ const Footer = () => {
     <footer className='footer'>
       <ul>
         <li>
-          <a href='https://www.instagram.com/milongomilo/'>
-            <img src='../../assets/1384015.png' alt='ig' />
-          </a>
+          <img src='../../assets/1384015.png' alt='ig' />
         </li>
         <li>
-          <a href='https://www.instagram.com/milongomilo/'>
-            <img src='../../assets/facebook (2).png' alt='fb' />
-          </a>
+          <img src='../../assets/facebook (2).png' alt='fb' />
         </li>
         <li>
-          <a href='https://www.instagram.com/milongomilo/'>
-            <img src='../../assets/gorjeo (2).png' alt='tw' />
-          </a>
+          <img src='../../assets/gorjeo (2).png' alt='tw' />
         </li>
-       
+        <li>
+        Copyright &copy; 2022, Upgrade Hub
+        </li>
+        <li>
+        <a href="<Link to='/about'>">🐾</a>
+        </li>
+
       </ul>
-      <div className="copy ">
-      <p>Copyright &copy; 2022, Upgrade Hub <a href="<Link to='/about'>">🐾</a></p>
-      </div>
     </footer>
   );
 };

@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import { JwtContext } from '../../context/jwtContext';
 import { API } from '../../services/api';
+import './LoginForm.scss'
 
 const LoginForm = () => {
     const { setJwt } = useContext(JwtContext);
@@ -19,6 +20,9 @@ const LoginForm = () => {
         });
       };
     return (
+      <div className='loginFondo'>
+      <div className='loginForm'>
+      <h2>Login</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
         <div className='formField email'>
           <label htmlFor='email'>Email:</label>
@@ -29,7 +33,7 @@ const LoginForm = () => {
           />
         </div>
         <div className='formField password'>
-          <label htmlFor='password'>Password:</label>
+          <label htmlFor='password'>Contraseña:</label>
           <input
             type='password'
             id='password'
@@ -38,6 +42,8 @@ const LoginForm = () => {
         </div>
         <button type='submit'>Login</button>
       </form>
+      </div>
+      </div>
   )
 }
 
