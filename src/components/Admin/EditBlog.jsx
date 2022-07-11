@@ -50,7 +50,7 @@ const EditBlog = () => {
 
   return (
     <>
-    <div className='editarBlog'>
+    <div className='añadirNoticiasForm'>
       <h1>Editar Blog</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className='formField'>
@@ -74,7 +74,7 @@ const EditBlog = () => {
         </div>
        
         <div className='formField'>
-          <label htmlFor='content'>Decripción: </label>
+          <label htmlFor='content'>Descripción: </label>
           <textarea
             id='content'
             name='content'
