@@ -1,8 +1,42 @@
-.homepri{
-   
+.line {
+    position: relative;
+    top: 50%;
+    width: 16em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(187, 72, 72, 0.75);
+    font-size: 1.6rem;
+    color: #FFB147;
+    text-align: center;
+    border-top: #FFB147;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+    font-size: x-large;
+    font-weight: 400;
     
-   
 }
+.anim-typewriter {
+    animation: typewriter 4s steps(36) 1s 1 normal both,
+    blinkTextCursor 500ms steps(36) infinite normal;
+}
+@keyframes typewriter {
+    from {
+          width: 0;
+    }
+    to {
+          width: 16em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+          border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+          border-right-color: transparent;
+    }
+}
+
 
 .titulo{
    text-align: center;
@@ -18,12 +52,17 @@
 
     img {
 
-        width: 170px;
+        @media screen {
+            max-width: 700px;
+            min-width: 100px;
+        }
+
+        width: 180px;
         height:200px ;
         -webkit-box-shadow: 2px 1px 18px -2px #000000; 
         box-shadow: 2px 1px 18px -2px #000000;
         border-radius: 20px;
-        margin: 4%;
+        margin: 6%;
 
     
     }
@@ -31,6 +70,8 @@
     .ph{
        
         text-align: justify;
+        padding: 6%;
+        font-size: medium;
 
     }
 }
@@ -46,35 +87,26 @@
     flex-direction: row;
 }
 
-.buttonh {
-    color: #ffffff;
-    font-size: 15px;
-    padding: 10px;
-    text-decoration: none;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 15px;
-    -webkit-box-shadow: 5px 5px 3px #cfcfcf;
-    -moz-box-shadow: 5px 5px 3px #cfcfcf;
-    box-shadow: 5px 5px 3px #cfcfcf;
-    text-shadow: 1px 1px 3px #666666;
-    border: solid #FF9EB3 0px;
-    background: #FF9EB3;
-    a{
-        color: white;
-    }
+.data-container {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
 
-    &:hover {
-        background: #0d0d0c;
-      }
-  }
-
-    .data-container{
-        background-color: #f2f2f2;
-        height:20vh;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        border-radius: 30px;
+button{
+    margin-top: 0px;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #ff9eb3;
+    border: 3px solid white;
+    color: white;
+    margin-bottom: 10px;
+    &:hover{
+        background-color: #dd889a;
+        transition: 0.5s;
     }
+}
+  
+
+   
  
