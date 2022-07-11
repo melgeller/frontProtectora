@@ -7,6 +7,7 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import './EditBlog.scss'
 
+
 const EditBlog = () => {
   const { register, handleSubmit } = useForm();
   const navigate = useNavigate();
