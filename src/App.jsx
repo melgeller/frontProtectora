@@ -7,11 +7,12 @@ import Home from './pages/Home/Home';
 import Gallery from './pages/Gallery/Gallery';
 import GalleryDetail from './pages/GalleryDetail/GalleryDetail';
 import Donaciones from './pages/Donaciones/Donaciones';
-import Forms from './pages/CreateForm/Forms';
 import Contact from './pages/Contact/Contact';
 import Blog from './pages/Blog/Blog';
 import About from './pages/About/About';
 import Login from './pages/Login/Login';
+import FormPets from './pages/CreateForm/FormPets';
+import FormBlog from './pages/CreateForm/FormBlog';
 import { PetContextProvider } from './context/context';
 import { RequireAuth } from './components/LoginComponent/RequireAuth';
 import { JwtContext } from './context/jwtContext';
@@ -39,26 +40,34 @@ function App() {
                 path='/donaciones'
                 element={<Donaciones></Donaciones>}></Route>
               <Route
-                path='/admin'
+                path='/adminmascota'
                 element={
                   <RequireAuth>
-                    <Forms />
+                    <FormPets />
                   </RequireAuth>
                 }></Route>
               <Route
-                path='/admin/:id'
+                path='/adminmascota/:id'
                 element={
                   <RequireAuth>
-                    <Forms />
+                    <FormPets />
                   </RequireAuth>
                 }></Route>
-                 <Route
-                path='/admin/:tipo/:id/'
+                <Route
+                path='/adminblog'
                 element={
                   <RequireAuth>
-                    <Forms />
+                    <FormBlog />
                   </RequireAuth>
                 }></Route>
+                <Route
+                path='/adminblog/:id/'
+                element={
+                  <RequireAuth>
+                    <FormBlog />
+                  </RequireAuth>
+                }></Route>
+
               <Route path='/login' element={<Login />} />
               <Route path='/adopcion' element={<Adopcion></Adopcion>}></Route>
             </Routes>
