@@ -24,7 +24,7 @@ const EditBlog = () => {
     console.log("esto es formdata",formData);
     API.patch(`http://localhost:8001/blogs/${id}`, formData).then((res) => {
     });
-    navigate('/gallery');
+    navigate('/blog');
   };
 
   useEffect(() =>  {

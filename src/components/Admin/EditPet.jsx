@@ -148,8 +148,8 @@ const EditPet = () => {
           </textarea>
         </div>
         <div className='formFieldPictures'>
-          <label htmlFor='picture'>Elegir Archivos: </label>
           <div className='labelArchivos'>
+          <label htmlFor='picture'>Elegir Archivos: </label>
           <input
             type='file'
             id='picture'
@@ -158,13 +158,13 @@ const EditPet = () => {
           />
           <input
             type='file'
-            id='picture'
+            id='picture1'
             multiple
             {...register('picture1', { required: false })}
           />
           <input
             type='file'
-            id='picture'
+            id='picture2'
             
             multiple
             {...register('picture2', { required: false })}
