@@ -66,17 +66,17 @@ const Gallery = () => {
           <p className='animalsP'>{pet.description}</p>
           <div className='botonesGallery'>
           <Link key={pet._id} to={`${pet._id}`}>
-            <p className='linkPerro'>Ver {pet.name}</p>
+            <p className='linkPerro'>Ver</p>
           </Link>
           {jwt && (
             <>
               <Link key={pet._id} to={`/admin/${pet._id}`}>
-                <p className='linkPerro'>Editar {pet.name}</p>
+                <p className='linkPerro'>Editar</p>
               </Link>
               <p
                 className='linkPerro'
                 onClick={(ev) => deletePet(`${pet._id}`, `${pet.name}`)}>
-                Borrar {pet.name}
+                Borrar
               </p>
             </>
         
