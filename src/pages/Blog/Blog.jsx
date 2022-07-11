@@ -25,7 +25,7 @@ const Blog = () => {
       confirmButtonText: '¡Si, borrar!',
     }).then((result) => {
       if (result.isConfirmed) {
-        API.delete(`/blogs/${id}`).then((res) => {});
+        API.delete(`http://localhost:8001/blogs/${id}`).then((res) => {});
         Swal.fire(
           `¡tu entrada ha sido borrado!`,
           'Tu entrada ha sido borrada de la BBDD.',

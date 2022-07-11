@@ -27,7 +27,7 @@ const EditPet = () => {
     formData.append('picture1', newdata.picture1[0]);
     formData.append('picture2', newdata.picture2[0]);
     console.log("esto es formdata",formData);
-    API.patch(`/pets/${id}`, formData).then((res) => {
+    API.patch(`http://localhost:8001/pets/${id}`, formData).then((res) => {
     });
     navigate('/gallery');
   };
@@ -35,7 +35,7 @@ const EditPet = () => {
   useEffect(() =>  {
     const getPetsById = async () => {
       const res = await axios.get(
-        `https://back-node-protectora.vercel.app/pets/${id}`
+        `http://localhost:8001/pets/${id}`
       );
       setPets(res.data.pet);
     }
