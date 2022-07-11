@@ -8,21 +8,11 @@ import { useParams } from 'react-router-dom';
 import './EditPet.scss'
 
 const EditPet = () => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
   const navigate = useNavigate();
   const { id } = useParams();
   const [pet, setPets] = useState({});  
-
-  useEffect(() => {
-    const getPetsById = async () => {
-      const res = await axios.get(
-        `https://back-node-protectora.vercel.app/pets/${id}`
-        );
-        setPets(res.data.pet);
-    };
-    getPetsById();
-  });
-
+ 
   const onSubmit = (newdata) => {
     console.log(newdata);
     const formData = new FormData();
@@ -51,6 +41,10 @@ const EditPet = () => {
     }
     getPetsById();
   },[]);
+  useEffect(() => {
+    // reset form with user data
+    reset(pet);
+}, [pet]);
 
   return (
     <>
@@ -63,8 +57,8 @@ const EditPet = () => {
           <input
             type='text'
             id='name'
-            value={pet.name}
             onChange={ev => setPets({...pet, name: ev.target.value})}
+            
             {...register('name', { required: true })}
           />
         </div>
@@ -119,7 +113,7 @@ const EditPet = () => {
           <input
             type='text'
             id='age'
-            value={pet.age}
+            
             {...register('age', { required: true })}
           />
         </div>
@@ -148,7 +142,7 @@ const EditPet = () => {
             name='description'
             rows='4'
             cols='50'
-            value={pet.description}
+            
             {...register('description', { required: true })}>
             Pon aquí la descripción de tu mascota.
           </textarea>
