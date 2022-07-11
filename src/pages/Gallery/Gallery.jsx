@@ -47,20 +47,20 @@ const Gallery = () => {
           <img src={pet.picture} alt={pet.name} />
           <div className='texto-animales'>
             <h3>{pet.name}</h3>
-            <p>Id: {pet._id}</p>
             <p>Sexo: {pet.sex}</p>
             <p>Edad: {pet.age}</p>
             <p>Tamaño: {pet.size}</p>
             <p>{pet.adopted}</p>
           </div>
           <p className='animalsP'>{pet.description}</p>
+          <div className='botonesGallery'>
           <Link key={pet._id} to={`${pet._id}`}>
             <p className='linkPerro'>Ver {pet.name}</p>
           </Link>
           {jwt && (
             <>
               <Link key={pet._id} to={`/admin/${pet._id}`}>
-                <p className='linkPerro'> {pet.name}</p>
+                <p className='linkPerro'>Editar {pet.name}</p>
               </Link>
               <p
                 className='linkPerro'
@@ -69,7 +69,9 @@ const Gallery = () => {
               </p>
             </>
           )}
+          </div>
         </div>
+
       ))}
     </div>
   );
