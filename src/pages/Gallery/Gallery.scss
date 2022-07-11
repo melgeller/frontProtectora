@@ -7,6 +7,7 @@
     margin-bottom: 60px;
     gap: 20px;
     
+    
         .main{
             background-color: #D9D9D9;
             display: flex;
@@ -28,6 +29,31 @@
         
         
     }
+    .botonesAlfredo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .linkPerro{
+            font-size: small;
+            cursor: pointer;
+                
+                width: 70px;
+                height: 40px;
+                border-radius: 10px;
+                background-color: #ff9eb3;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    background-color: #dd889a;
+                    transition: 0.5s;
+                }
+            
+        }
+
+    }
+    
     
     .carta{
         display: flex;
