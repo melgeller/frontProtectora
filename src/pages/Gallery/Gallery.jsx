@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useContext } from 'react';
 import { PetContext } from '../../context/context';
 import './Gallery.scss';
@@ -7,11 +7,9 @@ import { JwtContext } from '../../context/jwtContext';
 import { API } from '../../services/api';
 import Swal from 'sweetalert2';
 
-
 const Gallery = () => {
   const { pets } = useContext(PetContext);
   const { jwt } = useContext(JwtContext);
-  const [loaded, setLoaded] = useState(false);
 
   const deletePet = (id, name) => {
     console.log({ id });
@@ -22,7 +20,7 @@ const Gallery = () => {
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
-      confirmButtonText: '¡Si, borrar!'
+      confirmButtonText: '¡Si, borrar!',
     }).then((result) => {
       if (result.isConfirmed) {
         API.delete(`/pets/${id}`).then((res) => {});
@@ -30,11 +28,10 @@ const Gallery = () => {
           `¡${name} ha sido borrado!`,
           'Tu mascota ha sido borrada de la BBDD.',
           'ok',
-            window.location.reload(false)
-        )
-        }
-    })
-
+          window.location.reload(false)
+        );
+      }
+    });
   };
 
   return (

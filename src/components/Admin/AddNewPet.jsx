@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import './AddNewPet.scss'
 
-import AddBlogs from './AddBlogs';
 
 const AddNewPet = () => {
   const { register, handleSubmit } = useForm();
@@ -46,10 +46,12 @@ const AddNewPet = () => {
 
   return (
     <>
+    <div className='añadirMascota'>
       <h1>Añadir mascota</h1>
+      <div className='añadirMascotaForm'>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className='formField'>
-          <label htmlFor='name'>Nombre de mascota</label>
+          <label htmlFor='name'>Nombre de mascota: </label>
           <input
             type='text'
             id='name'
@@ -57,7 +59,7 @@ const AddNewPet = () => {
           />
         </div>
         <div className='formField'>
-          <label htmlFor='type'>Tipo de mascota</label>
+          <label htmlFor='type'>Tipo de mascota: </label>
           <select
             name='type'
             id='type'
@@ -67,14 +69,14 @@ const AddNewPet = () => {
           </select>
         </div>
         <div className='formField'>
-          <label htmlFor='sex'>Sexo</label>
+          <label htmlFor='sex'>Sexo: </label>
           <select name='sex' id='sex' {...register('sex', { required: true })}>
             <option value='macho'>Macho</option>
             <option value='hembra'>Hembra</option>
           </select>
         </div>
         <div className='formField'>
-          <label htmlFor='size'>Tamaño</label>
+          <label htmlFor='size'>Tamaño: </label>
           <select
             name='size'
             id='size'
@@ -85,7 +87,7 @@ const AddNewPet = () => {
           </select>
         </div>
         <div className='formField'>
-          <label htmlFor='age'>Edad</label>
+          <label htmlFor='age'>Edad: </label>
           <input
             type='text'
             id='age'
@@ -93,7 +95,7 @@ const AddNewPet = () => {
           />
         </div>
         <div className='formField'>
-          <label htmlFor='adopted'>Adoptado</label>
+          <label htmlFor='adopted'>Adoptado: </label>
           <input
             type='radio'
             name='adopted'
@@ -110,8 +112,8 @@ const AddNewPet = () => {
           />
           <label for='adopted'>No</label>
         </div>
-        <div className='formField'>
-          <label htmlFor='description'>Decripcion</label>
+        <div className='formField2'>
+          <label htmlFor='description'>Descripción: </label>
           <textarea
             id='description'
             name='description'
@@ -121,8 +123,9 @@ const AddNewPet = () => {
             Pon aquí la descripción de tu mascota.
           </textarea>
         </div>
-        <div className='formField'>
-          <label htmlFor='picture'>Select files:</label>
+        <div className='formFieldPictures'>
+          <label htmlFor='picture'>Elegir archivos: </label>
+          <div className='labelArchivos'>
           <input
             type='file'
             id='picture'
@@ -141,10 +144,12 @@ const AddNewPet = () => {
             multiple
             {...register('picture2', { required: false })}
           />
+          </div>
         </div>
         <button type='submit'>Añadir mascota</button>
       </form>
-      <AddBlogs></AddBlogs>
+      </div>
+      </div>
       
     </>
   );
