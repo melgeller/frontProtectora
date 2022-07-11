@@ -6,7 +6,7 @@ import NavLinks from "./NavLinks";
 const SideBar = () => {
   return (
     <div className="Menu">
-      <Menu right>
+      <Menu width={'218px'} right>
     
     <nav className="MHamburguesa">
           <NavLinks></NavLinks>
