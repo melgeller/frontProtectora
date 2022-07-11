@@ -19,6 +19,12 @@ const Carousel = () => {
     <>
       <section className='carouselContainer'>
         <Swiper
+          breakpoints={{
+            320: { slidesPerView: 1 },
+            480: { slidesPerView: 2 },
+            640: { slidesPerView: 3 },
+            768: { slidesPerView: 3 }
+          }}
           slidesPerView={3}
           spaceBetween={30}
           slidesPerGroup={3}
