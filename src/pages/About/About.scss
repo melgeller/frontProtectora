@@ -1,45 +1,76 @@
-.about{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 70px;
-    
-    .titulo{
-        margin-top: 30px;
-        margin-bottom: 40px;
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+  h1{
+    padding: 20px;
+  }
+  
+
+  
+  .mapa {
+    @media (max-width: 600px) {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        font-size: 1rem;
         
-        img{
+        
+        }
+        background-color: whitesmoke;
 
-            margin-top: 30px;
-            height: 30vw;
-            width: 80vw;
-            object-fit: cover;
-           
+    padding: 30px;
+    width: 90vw;
+    display: flex;
+    font-size: 1.13rem;
+    .protect {
+        @media (max-width: 600px) {
+            padding: 0;
+            padding-top: 20px;
+            width: 98%;
             
-        }
+            
+            }
+      padding-left: 40px;
+      width: 70%;
     }
-
-    ul,p{
-        margin-inline: 45px;
-        margin-bottom: 10px;
-        text-align: left;
-        .negrita{
-            font-weight: bold;
-
-        }
-        li{
-            margin: 10px 0px;
-        }
+  }
+  .equipo1{
+    padding: 10px;
+    h2{
+        text-align: center;
+        padding: 20px;
     }
-    ul{
-        display: flex;
-        flex-direction: column;
-
-    }
-
+    .equipo{
+       
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 40px;
+        
+        .jose ,.diego, .esther,.lucas, .silvia{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                
+        
+                width: 10rem;
+                height:10rem;
+                
+                border-radius: 100px;
+                padding: 20px;
+            }
+            p{
+                text-align: center;
+                padding: 10px;
+            }
+        }
+        
     
+}
+  }
 }
