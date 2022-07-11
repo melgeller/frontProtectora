@@ -2,29 +2,39 @@
 
 
 .homepri{
+    @media (max-width:600px)  {
+        flex-direction: column;
+        
+    }
+    display: flex;
+    flex-direction:row;
+    margin-top: 4rem;
+
+    img {
+        @media (max-width:600px)  {
+            width: 300px;
+            margin: 2rem auto;
+        }
+     
+    }
   
-    margin-top: 5%;
 }
 .line {
-
     
-    position: relative;
-    top: 50%;
-    width: 16em;
     margin: 0 auto;
-    border-right: 2px solid rgba(187, 72, 72, 0.75);
-    font-size:1.8rem;
     color: #FFB147;
-    text-align: center;
-    
-    text-align: center;
     white-space: nowrap;
     overflow: hidden;transform: translateY(-50%);
-    font-size: x-large;
+    font-size: 3rem;
     font-weight: 400;
     
 }
 .anim-typewriter {
+    @media (max-width:600px)  {
+        flex-direction: column;
+        font-size: x-large;
+      
+    }
     animation: typewriter 4s steps(36) 1s 1 normal both,
     blinkTextCursor 500ms steps(36) infinite normal;
 }
@@ -48,43 +58,51 @@
 
 
 
-.titulo{
-   text-align: center;
-}
+
 
 .second{
-
-
+ @media screen {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-size: medium;
+ }
+    
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     
-    font-size: 18px;
+    font-size: x-large;
 
-    img {
-        
-        width: 280px;
-        height:200px ;
-        -webkit-box-shadow: 2px 1px 18px -2px #000000; 
-        box-shadow: 2px 1px 18px -2px #000000;
-        border-radius: 20px;
-        margin: 4%;
-
-    
-    }
+ 
 
     .ph{
-       
+        @media (max-width:600px)  {
+         font-size:large;
+          
+        }
+
         text-align: justify;
-        margin: 4%;
-        font-size: medium;
+        margin: 6%;
+        font-size: x-large;
         
 
     }
 }
 
 .secondhome{
+    @media (max-width:600px)  {
+        flex-direction: column;
+        font-size: large;
+        margin-top: 5%;
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content:space-around;
+      
+    }
+   
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -93,11 +111,19 @@
     padding: 3%;
     display: flex;
     flex-direction: row;
+
+    font-size: x-large;
 }
 
 
 
 .buttonh{
+
+    @media (max-width:600px)  {
+        
+        margin-top: 8%;
+      
+    }
     a{
         color: white;
     }
