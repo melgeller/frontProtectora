@@ -124,7 +124,7 @@ const AddNewPet = () => {
           </textarea>
         </div>
         <div className='formFieldPictures'>
-          <label htmlFor='picture'>Elegir archivos: </label>
+          <label htmlFor='picture'>Elegir Archivos: </label>
           <div className='labelArchivos'>
           <input
             type='file'

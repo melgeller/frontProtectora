@@ -48,9 +48,9 @@ const EditPet = () => {
 
   return (
     <>
-    <div className='editarMascota'>
+    <div className='añadirMascota'>
       <h1>Editar mascota</h1>
-      <div className='formularioEditMascota'>
+      <div className='añadirMascotaForm'>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className='formField'>
           <label htmlFor='name'>Nombre de mascota: </label>
@@ -117,7 +117,7 @@ const EditPet = () => {
             {...register('age', { required: true })}
           />
         </div>
-        <div className='formField2'>
+        <div className='formField'>
           <label htmlFor='adopted'>Adoptado: </label>
           <input
             type='radio'
@@ -135,7 +135,7 @@ const EditPet = () => {
           />
           <label for='adopted'>No</label>
         </div>
-        <div className='formField'>
+        <div className='formField2'>
           <label htmlFor='description'>Descripción: </label>
           <textarea
             id='description'
@@ -147,8 +147,9 @@ const EditPet = () => {
             Pon aquí la descripción de tu mascota.
           </textarea>
         </div>
-        <div className='formField'>
+        <div className='formFieldPictures'>
           <label htmlFor='picture'>Elegir Archivos: </label>
+          <div className='labelArchivos'>
           <input
             type='file'
             id='picture'
@@ -168,6 +169,7 @@ const EditPet = () => {
             multiple
             {...register('picture2', { required: false })}
           />
+          </div>
         </div>
         <button type='submit'>Editar</button>
       </form>
