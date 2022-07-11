@@ -1,10 +1,9 @@
 
 import React from 'react';
 import './NavBar.scss';
-import { JwtContext } from '../../context/jwtContext';
+import { JwtContext } from '../../../context/jwtContext';
 import { useContext } from 'react';
-import ButtonLogout from '../LoginComponent/ButtonLogout';
-import SideBar from '../Navbar/SideBar';
+import ButtonLogout from '../../LoginComponent/ButtonLogout';
 import { NavLink } from 'react-router-dom';
 
 const NavLinks = () => {

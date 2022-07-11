@@ -1,6 +1,6 @@
 import React from 'react';
 import './NavBar.scss';
-import SideBar from '../Navbar/SideBar';
+import SideBar from './SideBar';
 import NavLinks from './NavLinks';
 
 const NavBar = () => {

@@ -1,8 +1,7 @@
 import React from "react";
 import { stack as Menu } from 'react-burger-menu';
-import { Link } from 'react-router-dom'
 import './SideBar.scss'
-import NavLinks from "../Static/NavLinks";
+import NavLinks from "./NavLinks";
 
 const SideBar = () => {
   return (
