@@ -94,7 +94,10 @@
     margin-bottom: 5%;
 }
 
-button{
+.buttonh{
+    a{
+        color: white;
+    }
     margin-top: 0px;
     width: 130px;
     height: 40px;
@@ -103,6 +106,7 @@ button{
     border: 3px solid white;
     color: white;
     margin-bottom: 10px;
+    
     &:hover{
         background-color: #dd889a;
         transition: 0.5s;

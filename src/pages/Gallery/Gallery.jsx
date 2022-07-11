@@ -47,6 +47,7 @@ const Gallery = () => {
           <img src={pet.picture} alt={pet.name} />
           <div className='texto-animales'>
             <h3>{pet.name}</h3>
+            <p>Id: {pet._id}</p>
             <p>Sexo: {pet.sex}</p>
             <p>Edad: {pet.age}</p>
             <p>Tamaño: {pet.size}</p>
@@ -68,10 +69,10 @@ const Gallery = () => {
                 Borrar {pet.name}
               </p>
             </>
+        
           )}
           </div>
         </div>
-
       ))}
     </div>
   );
