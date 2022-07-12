@@ -8,20 +8,20 @@ const AdoptionProcess = () => {
       <ul className='numeracionlu'>
         <li>
           <img src='../../assets/numeros/sinfondo1.png' alt='one' />
-          <p>Ven a conocernos a la prote y si sientes mach un con alguno de nuestros peludos escribenos. </p>
+          <p className='ps'>Ven a conocernos a la prote y si sientes mach un con alguno de nuestros peludos escribenos. </p>
         </li>
         <li>
         <img src='../../assets/numeros/el2.png' alt='one' />
-          <p>Después de recibir tu email, estudiaremos tu caso, nos pondremos en contacto con vosotros lo antes posible y organizaremos otra visita para que os podáis seguir conociendo.</p>
+          <p className='ps'>Después de recibir tu email, estudiaremos tu caso, nos pondremos en contacto con vosotros lo antes posible y organizaremos otra visita para que os podáis seguir conociendo.</p>
         </li>
         <li>
         <img src='../../assets/numeros/el3.png' alt='one' />
           
-          <p>Si entre vosotos existe una conexión y cumpleslos requisitos imprescincibles para nosotros y estás de acuerdo con las condiciones de la protectora ya solo queda una cosa...</p>
+          <p className='ps'>Si entre vosotos existe una conexión y cumpleslos requisitos imprescincibles para nosotros y estás de acuerdo con las condiciones de la protectora ya solo queda una cosa...</p>
         </li>
         <li>
         <img src='../../assets/numeros/el4.png' alt='one' />
-        <p>Organizar el dia perfecto para venir a recoger al nuevo miembro de la familia y disfrutar toda la vida de él.</p>
+        <p className='ps'>Organizar el dia perfecto para venir a recoger al nuevo miembro de la familia y disfrutar toda la vida de él.</p>
         </li>
       </ul>
       </div>
