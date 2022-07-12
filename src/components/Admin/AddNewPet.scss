@@ -1,4 +1,7 @@
 .añadirMascota{
+    @media  (max-width:600px)  {
+        font-size: small;
+        }
     background-color: white;
     width: 35%;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
@@ -9,6 +12,9 @@
     padding-top: 30px;
     padding-bottom: 30px;
     h1{
+        @media  (max-width:600px)  {
+            font-size: x-large;
+            }
         font-weight: 400;
         margin-bottom: 40px;
     }
@@ -21,6 +27,11 @@
 
         }
         .formField{
+            @media  (max-width:600px)  {
+                font-size:x-small;
+                display: flex;
+                flex-direction: column;
+                }
             margin-bottom: 30px;
             display: flex;
             gap: 20px;
@@ -28,6 +39,11 @@
         }
 
         .formField2{
+            @media  (max-width:600px)  {
+                
+                
+                }
+
             display: flex;
             flex-direction: column;
             gap:20px;
@@ -36,9 +52,18 @@
 
 
         label{
+            @media  (max-width:600px)  {
+                width: 130px;
+                height: 20px;
+                font-size: small;
+                }
             font-weight: 500;
         }
         input{
+            @media  (max-width:600px)  {
+                
+                
+                }
             display: flex;
             margin-bottom: 20px;
             border: 3px solid white;
@@ -46,6 +71,12 @@
             max-width: 400px;
         }
         textarea{
+            @media  (max-width:600px)  {
+                max-width: 80%; 
+               
+
+                
+            }
             display: flex;
             max-width: 80%;
             height: 100px;
