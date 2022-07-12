@@ -15,7 +15,7 @@
     .ph {
       line-height: 1.5rem;
     }
-    @media (max-width: 390px) {
+    @media (max-width: 600px) {
       padding-left: inherit;
       padding: 1rem;
       padding-top: 8rem;
@@ -35,7 +35,7 @@
     @media (max-width: 600px) {
       font-size: 1.8rem;
     }
-    @media (max-width: 390px) {
+    @media (max-width: 600px) {
       font-size: 1.4rem;
     }
   }
@@ -50,7 +50,7 @@
       margin: 0 auto;
     }
   }
-  @media (max-width: 390px) {
+  @media (max-width: 600px) {
     display: flex;
     flex-direction: column;
   }
@@ -73,7 +73,7 @@
     text-align: center;
     .buttonh {
       margin: 1rem;     
-      @media (max-width: 390px){
+      @media (max-width: 600px){
         margin: 1rem  
       }
     }
