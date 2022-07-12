@@ -1,127 +1,127 @@
-.barraContacto{
-    @media (max-width:600px)  {
-        display: flex;
-        flex-direction: column;
-
-        }
+.barraContacto {
+  @media (max-width: 600px) {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.formulario-entero{
-    @media (max-width:600px)  {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.formulario-entero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @media (max-width: 600px) {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-.contact_form{
-    @media (max-width:600px)  {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-       
-    }
+  }
+  .contact_form {
     background-color: white;
+    justify-content: space-evenly;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 60px;
-    margin-bottom: 100px;
-    gap: 100px;
-    width: 60%;
+    margin: 3rem;
+    gap: 2rem;
+    width: 100%;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-    h4{
-        @media (max-width:600px)  {
-        
-        }
-        margin-bottom: 30px;
-        font-weight: 300;
-        font-size: small;
-        
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      margin: 1rem;
     }
-    h1{
-        @media (max-width:600px)  {
-            font-weight: 400;
-            font-size: 20px;
-        }
+    h1 {
+      font-weight: 400;
+      margin-bottom: 20px;
+      text-align: center;
+      @media (max-width: 600px) {
         font-weight: 400;
+        font-size: 20px;
+      }
+    }
+    h4 {
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: 300;
+      font-size: small;
+      @media (max-width: 768px) {
+      }
+    }
+    .formulario {
+      width: 45%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 600px) {
+        font-size: small;
+        text-align: left;
+        width: 100%;
+      }
+      form {
+        margin: 0 auto;
+        width: auto;
+      }
+      input {
+        @media (max-width: 600px) {
+          width: 90%;
+          height: 40px;
+          font-size: 10px;
+        }
+        display: flex;
         margin-bottom: 20px;
+        width: 300px;
+        height: 35px;
+        border: 3px solid white;
+        border-bottom: 1px solid #afafaf;
+      }
+      textarea {
+        display: flex;
+        margin-top: 10px;
+        width: 350px;
+        height: 100px;
+        background-color: #fafafa;
+        border: 3px solid white;
+        resize: none;
+        @media (max-width: 600px) {
+          width: 190px;
+          height: 80px;
+          font-size: 10px;
+        }
+      }
+      button {
+        @media (max-width: 600px) {
+          margin-top: 5%;
+        }
+        margin-top: 0px;
+        width: 130px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #ff9eb3;
+        border: 3px solid white;
+        color: white;
+        margin-bottom: 10px;
+        &:hover {
+          background-color: #dd889a;
+          transition: 0.5s;
+        }
+      }
+      h5 {
+        @media (max-width: 600px) {
+        }
+        font-size: x-small;
+        font-weight: 400;
+      }
     }
-    img{
-        @media (max-width:600px)  {
-            width: 80%;
-        }
-        width: 500px;
-        
+    img {
+      width: 45%;
+      max-width: 400px;
+      height: auto;
+      object-fit: cover;
+      @media (max-width: 425px) {
+        display: none;
+      }
     }
-    .formulario{
-        @media (max-width:600px)  {
-         font-size: small;
-         text-align: left;
-         margin: 4%;
-         
-        }
-        text-align:left;
-        margin-left: 70px;
-        input{
-            @media (max-width:600px)  {
-                width: 190px;
-                height: 40px;
-                font-size: 10px;
-            }
-            display: flex;
-            margin-bottom: 20px;
-            width: 300px;
-            height: 35px;
-            
-            border: 3px solid white;
-            border-bottom: 1px solid #afafaf ;
-        }
-        textarea{
-            @media (max-width:600px)  {
-                width: 190px;
-                height: 80px;
-                font-size: 10px;
-            }
-            display: flex;
-            margin-top: 10px;
-            width: 350px;
-            height: 100px;
-            background-color: #FAFAFA ;
-            border: 3px solid white;
-            resize: none;
-
-
-        }
-
-        button{
-            @media (max-width:600px)  {
-             margin-top: 5%;
-            }
-            margin-top: 0px;
-            width: 130px;
-            height: 40px;
-            border-radius: 10px;
-            background-color: #ff9eb3;
-            border: 3px solid white;
-            color: white;
-            margin-bottom: 10px;
-            &:hover{
-                background-color: #dd889a;
-                transition: 0.5s;
-            }
-        }
-        h5{
-            @media (max-width:600px)  {
-        
-            }
-            font-size: x-small;
-            font-weight: 400;
-        }
-    }
-}
+  }
 }
