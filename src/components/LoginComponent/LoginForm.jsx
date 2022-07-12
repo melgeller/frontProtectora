@@ -16,7 +16,7 @@ const LoginForm = () => {
           localStorage.setItem('token', res.data.token);
           localStorage.setItem('user', res.data.user.email);
           setJwt(localStorage.getItem("token"));
-          navigate('/admin');
+          navigate('/');
         });
       };
     return (
