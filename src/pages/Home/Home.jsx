@@ -1,8 +1,8 @@
 import React from 'react'
-import Hero from '../../components/Home Components/Hero';
-import Carousel from '../../components/Home Components/Carousel'
-import AdoptionProcess from '../../components/Home Components/AdoptionProcess';
-import Colaborators from '../../components/Home Components/Colaborators';
+import Hero from '../../components/HomeComponents/Hero';
+import Carousel from '../../components/HomeComponents/Carousel'
+import AdoptionProcess from '../../components/HomeComponents/AdoptionProcess';
+import Colaborators from '../../components/HomeComponents/Colaborators';
 const Home = () => {
   return (
     <div className="container">
