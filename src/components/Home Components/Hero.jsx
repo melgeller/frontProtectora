@@ -6,10 +6,12 @@ const Hero = () => {
   return (
     <>
       <section className='homepri'>
+        
         <img src='../assets/homefinal.png' alt='perrequeHero' />
+       
 
         <div className='second'>
-          <h2 class='line anim-typewriter'>Upgrade Hub Adopciones</h2>
+        <h2 class='line anim-typewriter'>Upgrade Hub Adopciones</h2>
           <p className='ph'>
             Somos una protectora sin ánimo de lucro que se fundó en el año 2010.
             Surgimos como respuesta al elevado número de animales que son
