@@ -7,7 +7,7 @@ const Colaborators = () => {
         <li>
           
             <img
-              src='../../assets/centro-veterinario-EUROCAN.jpeg'
+              src='../../assets/eukanuba.png'
               alt='Centro veterinario Eurocan'
             />
         </li>
@@ -23,6 +23,20 @@ const Colaborators = () => {
           <img
               src='../../assets/nova-clinica-veterinarios.jpeg'
               alt='Nova Clinica Veterniarios'
+            />
+        </li>
+        <li>
+          
+          <img
+              src='../../assets/kiwoko.png'
+              alt='Van a casa'
+            />
+        </li>
+        <li>
+          
+          <img
+              src='../../assets/affinity.png'
+              alt='Van a casa'
             />
         </li>
       </ul>
