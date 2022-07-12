@@ -31,7 +31,7 @@ const Donaciones = () => {
         <div className='galeriaDonaciones'>
           <div className='cartaDonacion'>
             <h4>Adopta</h4>
-            <img src='../../assets/donations.webp' alt='donations' />
+            <img src='../../assets/donations3.png' alt='donations' />
             <p>
               Si te decides por adoptar un perro o un cachorro , te lo llevarás
               a casa vacunado, desparasitado, con análisis de sangre completos,
@@ -41,7 +41,7 @@ const Donaciones = () => {
           </div>
           <div className='cartaDonacion'>
             <h4>Hazte casa de acogida</h4>
-            <img src='../../assets/donations.webp' alt='donations' />
+            <img src='../../assets/donations2.webp' alt='donations' />
             <p>
               Si te gustan los animales, pero no tienes ahora mismo una vida
               estable para poder hacerte responsable de una adopción que durará
@@ -50,8 +50,8 @@ const Donaciones = () => {
             </p>
           </div>
           <div className='cartaDonacion'>
-            <h4>Volunariado</h4>
-            <img src='../../assets/donations.webp' alt='donations' />
+            <h4>Voluntariado</h4>
+            <img src='../../assets/donations4.png' alt='donations' />
             <p>
               Los voluntarios siempre son indispensables para el buen
               funcionamiento de cualquier asociación. El único requisito es que
@@ -60,7 +60,7 @@ const Donaciones = () => {
           </div>
           <div className='cartaDonacion'>
             <h4>Unete a nuestro Teaming</h4>
-            <img src='../../assets/donations.webp' alt='donations' />
+            <img src='../../assets/donations5.png' alt='donations' />
             <p>
               Teaming es una herramienta online para recaudar fondos para causas
               sociales a través de micro donaciones de 1€ al mes.
@@ -68,18 +68,18 @@ const Donaciones = () => {
           </div>
           <div className='cartaDonacion'>
             <h4>Hazte socio</h4>
-            <img src='../../assets/donations.webp' alt='donations' />
+            <img src='../../assets/donations7.png' alt='donations' />
             <p>
-              Salvar vidas supone una importante inversión de dinero en el
-              mantenimiento de nuestro albergue, en gastos veterinarios,
-              quirúrgicos y medicamentos, en manutención, alimentación y un
+              Salvar vidas supone una importante inversión de dinero en
+              mantenimiento, en gastos veterinarios,
+              quirúrgicos y medicamentos, alimentación y un
               sinfín de gastos que se ven reducidos gracias a las aportaciones
               de nuestros socios.
             </p>
           </div>
           <div className='cartaDonacion'>
             <h4>Haz un donativo puntual</h4>
-            <img src='../../assets/donations.webp' alt='donations' />
+            <img src='../../assets/donations6.webp' alt='donations' />
             <p>
               Puedes hacer un donativo puntual para ayudar a nuestros animales
               siempre y cuando tus circunstancias te lo permitan. En cualquier
