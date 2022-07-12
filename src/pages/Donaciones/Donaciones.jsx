@@ -29,7 +29,7 @@ const Donaciones = () => {
           </p>
         </div>
         <div className='galeriaDonaciones'>
-          <div className='carta'>
+          <div className='cartaDonacion'>
             <h4>Adopta</h4>
             <img src='../../assets/donations.webp' alt='donations' />
             <p>
@@ -39,7 +39,7 @@ const Donaciones = () => {
               internacional.
             </p>
           </div>
-          <div className='carta'>
+          <div className='cartaDonacion'>
             <h4>Hazte casa de acogida</h4>
             <img src='../../assets/donations.webp' alt='donations' />
             <p>
@@ -49,7 +49,7 @@ const Donaciones = () => {
               compañía de un perro o gato …
             </p>
           </div>
-          <div className='carta'>
+          <div className='cartaDonacion'>
             <h4>Volunariado</h4>
             <img src='../../assets/donations.webp' alt='donations' />
             <p>
@@ -58,7 +58,7 @@ const Donaciones = () => {
               te gusten los animales.
             </p>
           </div>
-          <div className='carta'>
+          <div className='cartaDonacion'>
             <h4>Unete a nuestro Teaming</h4>
             <img src='../../assets/donations.webp' alt='donations' />
             <p>
@@ -66,7 +66,7 @@ const Donaciones = () => {
               sociales a través de micro donaciones de 1€ al mes.
             </p>
           </div>
-          <div className='carta'>
+          <div className='cartaDonacion'>
             <h4>Hazte socio</h4>
             <img src='../../assets/donations.webp' alt='donations' />
             <p>
@@ -77,7 +77,7 @@ const Donaciones = () => {
               de nuestros socios.
             </p>
           </div>
-          <div className='carta'>
+          <div className='cartaDonacion'>
             <h4>Haz un donativo puntual</h4>
             <img src='../../assets/donations.webp' alt='donations' />
             <p>

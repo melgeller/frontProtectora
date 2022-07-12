@@ -5,12 +5,13 @@ import { JwtContext } from '../../../context/jwtContext';
 import { useContext } from 'react';
 import ButtonLogout from '../../LoginComponent/ButtonLogout';
 import { NavLink } from 'react-router-dom';
+import './NavLinks.scss'
 
 const NavLinks = () => {
   const { jwt } = useContext(JwtContext);
   const activeClassName = 'selected';
     return (
-        <ul>
+        <ul className='linksHamburguesa'>
           <li>
             <NavLink
               to='/'
