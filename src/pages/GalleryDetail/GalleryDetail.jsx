@@ -36,14 +36,14 @@ const GalleryDetail = () => {
           {loaded ? (
             <div className='galleryDetail'>
               <div className='pictureDetail'>
-              {pet.picture && pet.picture !== 'h' && pet.picture !== 'undefined' ? (
+              {pet.picture && pet.picture.includes("cloudinary") && pet.picture !== 'undefined' ? (
                 <img src={pet.picture} alt={pet.name}></img>
               ):(<img src='../../assets/logoperro.png' alt={pet.name}/>)}
                 <div className='petPictureMin'>
-                  {pet.picture1 && pet.picture1 !== 'h' && pet.picture1 !== 'undefined' ? (
+                  {pet.picture1 && pet.picture1.includes("cloudinary") ? (
                     <img src={pet.picture1} alt={pet.name}/>
                   ):null}
-                  {pet.picture2 && pet.picture2 !== 'h' && pet.picture2 !== 'undefined' ? (
+                  {pet.picture2 && pet.picture2.includes("cloudinary") ? (
                     <img src={pet.picture2} alt={pet.name}></img>
                   ):null}
                 </div>

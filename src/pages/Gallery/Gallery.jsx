@@ -61,7 +61,7 @@ const Gallery = () => {
         .filter((pet) => pet.type.toLowerCase().includes(filter))
         .map((pet) => (
           <div className='carta'>
-            {pet.picture && pet.picture !== 'undefined' ? (
+            {pet.picture && pet.picture.includes("cloudinary")  ? (
               <img src={pet.picture} alt={pet.name} />
             ) : (
               <img src='../../assets/logoperro.png' alt={pet.name} />

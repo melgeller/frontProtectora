@@ -160,8 +160,12 @@ const EditPet = () => {
               <label htmlFor='picture'>Elegir Archivos: </label>
               <div className='picturesContainer'>
                 <div className='pictureContainer'>
-                  {pet.picture && pet.picture !== 'h' ? (<img src={pet.picture} alt={pet.name} />) : null}
-                  {!pet.picture || pet.picture === 'h' ? (<img src='../../assets/logoperro.png' alt={pet.name} />) : null }
+                  {pet.picture && pet.picture.includes("cloudinary") ? (
+                    <img src={pet.picture} alt={pet.name} />
+                  ) : null}
+                  {!pet.picture || !pet.picture.includes("cloudinary") ? (
+                    <img src='../../assets/logoperro.png' alt={pet.name} />
+                  ) : null}
                   <input
                     type='file'
                     id='picture'
@@ -170,8 +174,12 @@ const EditPet = () => {
                   />
                 </div>
                 <div className='pictureContainer'>
-                {pet.picture1 && pet.picture1 !== 'h' ? (<img src={pet.picture1} alt={pet.name1} />) : null}
-                  {!pet.picture1 || pet.picture1 === 'h' ? (<img src='../../assets/logoperro.png' alt={pet.name1} />) : null }
+                  {pet.picture1 && pet.picture1.includes("cloudinary") ? (
+                    <img src={pet.picture1} alt={pet.name1} />
+                  ) : null}
+                  {!pet.picture1 || !pet.picture1.includes("cloudinary") ? (
+                    <img src='../../assets/logoperro.png' alt={pet.name1} />
+                  ) : null}
                   <input
                     type='file'
                     id='picture1'
@@ -180,8 +188,12 @@ const EditPet = () => {
                   />
                 </div>
                 <div className='pictureContainer'>
-                {pet.picture2 && pet.picture2 !== 'h' ? (<img src={pet.picture2} alt={pet.name2} />) : null}
-                  {!pet.picture2 || pet.picture2 === 'h' ? (<img src='../../assets/logoperro.png' alt={pet.name2} />) : null }
+                  {pet.picture2 && pet.picture2.includes("cloudinary") ? (
+                    <img src={pet.picture2} alt={pet.name2} />
+                  ) : null}
+                  {!pet.picture2 || !pet.picture2.includes("cloudinary") ? (
+                    <img src='../../assets/logoperro.png' alt={pet.name2} />
+                  ) : null}
                   <input
                     type='file'
                     id='picture2'
