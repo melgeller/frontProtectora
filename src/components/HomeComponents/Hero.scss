@@ -1,149 +1,123 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
-
-.homepri{
-    @media (max-width:600px)  {
-        flex-direction: column;
-        
+.hero {
+  display: flex;
+  gap: 1rem;
+  width: 90%;
+  margin: 4rem auto 4rem;
+  flex-direction: row;
+  .heroText {
+    background-color: #fce6eb;
+    padding: 2rem;
+    border-radius: 4rem;
+    padding-left: 15rem;
+    margin-left: -15rem;
+    .ph {
+      line-height: 1.5rem;
     }
-    display: flex;
-    flex-direction:row;
-    margin-top: 4rem;
-
-    img {
-        @media (max-width:600px)  {
-            width: 300px;
-            margin: 2rem auto;
-        }
-     
+    @media (max-width: 600px) {
+      padding-left: inherit;
+      padding: 1rem;
+      padding-top: 8rem;
+      margin-left: inherit;
+      margin-top: -8rem;
+      border-radius: 2rem;
     }
-  
-}
-.line {
+  }
+  h1 {
     font-family: 'Lilita One', cursive;
     margin: 0 auto;
-    color: #FFB147;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);
-    font-size: 3rem;
-    font-weight: 400;
-    
-}
-.anim-typewriter {
-    @media (max-width:600px)  {
-        flex-direction: column;
-        font-size: x-large;
-      
-    }
+    color: #ff9eb3;
+    margin-bottom: 2rem;
+    font-size: 2rem;
     animation: typewriter 4s steps(36) 1s 1 normal both,
     blinkTextCursor 500ms steps(36) infinite normal;
+    @media (max-width: 600px) {
+      font-size: 1.8rem;
+    }
+  }
+  img {
+    object-fit: contain;
+    width: 40%;
+    //height: 200px;
+    z-index: 2;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 3));
+    @media (max-width: 600px) {
+      width: 300px;
+      margin: 0 auto;
+    }
+  }
+    @media (max-width: 600px) {
+      margin: 2rem auto;
+    }
 }
+
+.secondhome {
+  background-color: #ffdcab;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 4rem 2rem;
+  align-items: center;
+  justify-content: space-around;
+  font-size: x-large;
+  margin-bottom: 4rem;
+  .secondhomebuttons {
+    .buttonh {
+      margin: 0 1rem;
+    }
+  }
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    margin-top: 5%;
+    align-items: center;
+    width: inherit;
+  }
+  p {
+    @media (max-width: 600px) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
 @keyframes typewriter {
-    from {
-          width: 0;
-    }
-    to {
-          width: 16em;
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 11em;
+  }
 }
 
 @keyframes blinkTextCursor {
-    from {
-          border-right-color: rgba(255, 255, 255, 0.75);
-    }
-    to {
-          border-right-color: transparent;
-    }
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 
-
-
-
-
-.second{
- @media screen {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     font-size: medium;
- }
-    
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-    font-size: x-large;
-
- 
-
-    .ph{
-        @media (max-width:600px)  {
-         font-size:large;
-          
-        }
-
-        text-align: justify;
-        margin: 6%;
-        font-size: x-large;
-        
-
-    }
-}
-
-.secondhome{
-    @media (max-width:600px)  {
-        flex-direction: column;
-        font-size: large;
-        margin-top: 5%;
-        display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content:space-around;
-      
-    }
-   
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-around;
-    margin: 4%;
-    padding: 3%;
-    display: flex;
-    flex-direction: row;
-
-    font-size: x-large;
-}
-
-
-
-.buttonh{
-
-    @media (max-width:600px)  {
-        
-        margin-top: 8%;
-      
-    }
-    a{
-        color: white;
-    }
-    margin-top: 0px;
-    width: 130px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: #ff9eb3;
-    border: 3px solid white;
+.buttonh {
+  @media (max-width: 600px) {
+    margin-top: 8%;
+  }
+  a {
     color: white;
-    margin-bottom: 10px;
-    
-    &:hover{
-        background-color: #dd889a;
-        transition: 0.5s;
-    }
-}
-  
+  }
+  margin-top: 0px;
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #ff9eb3;
+  border: 3px solid white;
+  color: white;
+  margin-bottom: 10px;
 
-   
- 
+  &:hover {
+    background-color: #dd889a;
+    transition: 0.5s;
+  }
+}

@@ -1,17 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./Hero.scss";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Hero.scss';
 
 const Hero = () => {
   return (
     <>
-      <section className='homepri'>
-        
+      <section className='hero'>
         <img src='../assets/homefinal.png' alt='perrequeHero' />
-       
-
-        <div className='second'>
-        <h2 class='line anim-typewriter'>Upgrade Hub Adopciones</h2>
+        <div className='heroText'>
+          <h1 class='line anim-typewriter'>Upgrade Hub Adopciones</h1>
           <p className='ph'>
             Somos una protectora sin ánimo de lucro que se fundó en el año 2010.
             Surgimos como respuesta al elevado número de animales que son
@@ -26,13 +23,12 @@ const Hero = () => {
           </p>
         </div>
       </section>
-      <section>
-        <div className='secondhome'>
-          <p>Si quieres aportar tu granito de arena, dale aquì.</p>
+      <section className='secondhome'>
+        <p>Si quieres aportar tu granito de arena, dale aquì.</p>
+        <div className='secondhomebuttons'>
           <button className='buttonh'>
             <Link to='/donaciones'>Colabora</Link>
           </button>
-
           <button className='buttonh'>
             <Link to='/about'>Nosotros </Link>
           </button>
