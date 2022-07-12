@@ -1,84 +1,108 @@
-.main {
-  background-color: #d9d9d9;
-  display: flex;
-  justify-content: space-between;
-  width: 91vw;
-  font-size: 80%;
-  align-items: center;
-  margin-left: 0;
-  margin-top: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  p {
-    margin-right: 10px;
-  }
-  img {
-    width: 20px;
-    margin-left: 20px;
-  }
-}
-.galleryDetail {
-  width: 80%;
-  margin: 3rem auto;
+.details {
   display: flex;
   justify-content: center;
-  background-color: #f7f7f7;
-  padding: 1rem;
-  .pictureDetail {
+  align-items: center;
+  flex-direction: column;
+  .main {
+    background-color: #d9d9d9;
     display: flex;
-    flex-direction: column;
-    width: 40%;
-    img {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
-      margin-bottom: 1rem;
-    }
-    .petPictureMin {
-      display: flex;
-      justify-content: space-between;
-      img {
-        width: 46%;
-      }
-    }
-  }
-  .petType {
-    text-transform: capitalize;
-    color: gray;
-    margin-bottom: 1rem;
-  }
-  .petFeature {
-    display: flex;
+    justify-content: space-between;
+    width: 91vw;
+    font-size: 80%;
     align-items: center;
-    margin-bottom: 2rem;
-    .petSex {
-      text-transform: capitalize;
-      margin-right: 1rem;
-      padding: .5rem 1rem;
-      border-radius: 1.5rem;
-      &.male {
-        //background: url(../../../public/assets/mars-solid.svg) no-repeat;
-        //padding-left: 20px;
-        background-color: #d1eefe;
-      }
-      &.female {
-        //background: url(../../../public/assets/venus-solid.svg) no-repeat;
-        //padding-left: 20px;
-        background-color: #ff9eb3;
-      }
+    margin-left: 0;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    p {
+      margin-right: 10px;
     }
-    .petAge {
-      text-transform: capitalize;
-      margin-right: 1rem;
-    }
-    .petSize {
-      text-transform: capitalize;
-      margin-right: 1rem;
+    img {
+      width: 20px;
+      margin-left: 20px;
     }
   }
-  .petDetail {
-    margin-bottom: 2rem;
+  .galleryDetail {
+    width: 90%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+    padding: 1rem;
+    @media (max-width: 390px) {
+      flex-direction: column;
+      margin-top: 1rem;
+      padding: .5rem;
+    }
+    .pictureDetail {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      @media (max-width: 390px) {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        margin: inherit;
+        margin-bottom: 1rem;
+      }
+      .petPictureMin {
+        display: flex;
+        justify-content: space-between;
+        img {
+          width: 46%;
+        }
+      }
+    }
+    .detailsDetail {
+      font-size: medium;
+      margin-left: 30px;
+      width: 60%;
+      @media (max-width: 390px) {
+        width: 100%;
+        margin: 1rem auto;
+      }
+      .petFeature {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        .petSex {
+          text-transform: capitalize;
+          margin-right: 1rem;
+          padding: 0.5rem 1rem;
+          border-radius: 1.5rem;
+          &.male {
+            //background: url(../../../public/assets/mars-solid.svg) no-repeat;
+            //padding-left: 20px;
+            background-color: #d1eefe;
+          }
+          &.female {
+            //background: url(../../../public/assets/venus-solid.svg) no-repeat;
+            //padding-left: 20px;
+            background-color: #ff9eb3;
+          }
+        }
+        .petAge {
+          text-transform: capitalize;
+          margin-right: 1rem;
+        }
+        .petSize {
+          text-transform: capitalize;
+          margin-right: 1rem;
+        }
+      }
+      .petType {
+        text-transform: capitalize;
+        color: gray;
+        margin-bottom: 1rem;
+      }
+      .petDetail {
+        margin-bottom: 2rem;
+      }
+    }
   }
 }
 .buttonDetail {
@@ -117,22 +141,4 @@
     width: 300px;
     margin: 50px;
   }
-}
-
-.details {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.detailsDetail {
-  font-size: medium;
-  margin-left: 30px;
-  width: 60%;
-}
-
-.textDetail {
-  width: 40%;
-  margin: 50px;
 }

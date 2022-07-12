@@ -65,7 +65,7 @@ const GalleryDetail = () => {
                 <p className='petDetail'>{pet.description}</p>
                 <div className='buttonDetail'>
                   <p>
-                    <Link to='/adopcon'>Adoptar</Link>
+                    <Link to='/adopcion'>Adoptar</Link>
                   </p>
                 </div>
               </div>

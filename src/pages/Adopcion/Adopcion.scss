@@ -12,183 +12,158 @@
   align-items: center;
   width: 80%;
   p {
-    @media (max-width:600px)  {
+    @media (max-width: 600px) {
       font-size: small;
-      
-      
-  }
-    text-align: center;
+    }
     font-size: medium;
     margin-bottom: 30px;
   }
 
   img {
-    @media (max-width:600px)  {
-        width: 100%;
-        margin: 15px;
-        object-fit: contain;
-        
+    @media (max-width: 600px) {
+      width: 100%;
+      margin: 15px;
+      object-fit: contain;
     }
     margin: 40px;
     width: 700px;
   }
 }
 
-.formulario2{
-  @media (max-width:600px)  {
-    width: 60vw;
-    margin: 15px;
+.formulario2 {
+  @media (max-width: 600px) {
+    margin: 0 1rem;
     display: flex;
     flex-direction: column;
-  
-    
-}
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-    margin-bottom: 50px;
-    margin-top: 30px;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    
-    
-    h2{
-        margin-bottom: 40px;
-        font-weight: 400;
+    padding: 1rem;
+  }
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  h2 {
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
+  p {
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  input {
+    display: flex;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 35px;
+    border: 3px solid white;
+    border-bottom: 1px solid #afafaf;
+    @media (max-width: 600px) {width: 100%;}
+  }
+  .name {
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
-    p{
-      
-        font-weight: 600;
-        margin-bottom: 20px;
-        margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    label {
+      margin-right: 20px;
     }
-    input {
-        display: flex;
-        margin-bottom: 20px;
-        width: 200px;
-        height: 35px;
-        border: 3px solid white;
-        border-bottom: 1px solid #afafaf;
-      }
-      .name{
-        @media (max-width:600px)  {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          
-      }
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        
-        label{
-            margin-right: 20px;
-            
-        }
+  }
+  .adress {
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
-      }
-      .adress{
-        @media (max-width:600px)  {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          
-      }
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        
-        label{
-            margin-right: 20px;
-            
-        }
-      }
-      .animalform{
-        @media (max-width:600px)  {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          padding-top: 20px;
-          
-          
-          
-      }
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        label{
-            margin-right: 20px;
-            
-        }
+    label {
+      margin-right: 20px;
+    }
+  }
+  .animalform {
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 20px;
+    }
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    label {
+      margin-right: 20px;
+    }
+  }
 
-      }
+  textarea {
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+    display: flex;
+    margin-top: 10px;
+    width: 500px;
+    height: 100px;
+    background-color: #fafafa;
+    border: 3px solid white;
+    resize: none;
+  }
 
-      textarea{
-        @media (max-width:600px)  {
-          width: 100%;
-          
-      }
-        display: flex;
-            margin-top: 10px;
-            width: 500px;
-            height: 100px;
-            background-color: #FAFAFA ;
-            border: 3px solid white;
-            resize: none;
-      }
+  button {
+    margin-top: 40px;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #ff9eb3;
+    border: 3px solid white;
+    color: white;
+    font-size: medium;
+  }
 
-      button{
-        margin-top: 40px;
-        width: 130px;
-        height: 40px;
-        border-radius: 10px;
-        background-color: #ff9eb3;
-        border: 3px solid white;
-        color: white;
-        font-size: medium;
-        
+  .privacidad {
+    @media (max-width: 600px) {
+      width: 100%;
     }
 
-    .privacidad{
-      @media (max-width:600px)  {
-        width: 100%;
-        
-        
-    }
-     
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 40px;
-        
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
 
-    .button{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 50px;
-        button{
-            &:hover{
-                background-color: #dd889a;
-                transition: 0.5s;
-            }
-        }
-        h5{
-            font-size: small;
-            font-weight: 400;
-        }
+  .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    button {
+      &:hover {
+        background-color: #dd889a;
+        transition: 0.5s;
+      }
     }
+    h5 {
+      font-size: small;
+      font-weight: 400;
+    }
+  }
 
-    .inputprivacy{
-      @media (max-width:600px)  {
-        margin: 10px;
-        
-        
+  .inputprivacy {
+    @media (max-width: 600px) {
+      margin: 10px;
     }
-        margin: 0;
-        width: 50px;
-
-    }
+    margin: 0;
+    width: 50px;
+  }
 }
