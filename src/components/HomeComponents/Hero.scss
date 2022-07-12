@@ -15,7 +15,7 @@
     .ph {
       line-height: 1.5rem;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 390px) {
       padding-left: inherit;
       padding: 1rem;
       padding-top: 8rem;
@@ -35,6 +35,9 @@
     @media (max-width: 600px) {
       font-size: 1.8rem;
     }
+    @media (max-width: 390px) {
+      font-size: 1.4rem;
+    }
   }
   img {
     object-fit: contain;
@@ -46,6 +49,10 @@
       width: 300px;
       margin: 0 auto;
     }
+  }
+  @media (max-width: 390px) {
+    display: flex;
+    flex-direction: column;
   }
     @media (max-width: 600px) {
       margin: 2rem auto;
@@ -63,14 +70,16 @@
   font-size: x-large;
   margin-bottom: 4rem;
   .secondhomebuttons {
+    text-align: center;
     .buttonh {
-      margin: 0 1rem;
+      margin: 1rem auto;     
     }
   }
   @media (max-width: 820px) {
     display: flex;
     flex-direction: column;
     font-size: large;
+    justify-content: center;
     margin-top: 5%;
     align-items: center;
     width: inherit;
