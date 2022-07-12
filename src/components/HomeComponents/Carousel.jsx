@@ -11,8 +11,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './swiper.scss';
-import { Pagination, Navigation } from 'swiper';
 
+import { Pagination, Navigation } from 'swiper';
 const Carousel = () => {
   const { pets } = useContext(PetContext);
   return (
