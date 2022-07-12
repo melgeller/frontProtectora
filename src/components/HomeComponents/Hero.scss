@@ -67,7 +67,7 @@
       margin: 0 1rem;
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 820px) {
     display: flex;
     flex-direction: column;
     font-size: large;
@@ -76,7 +76,7 @@
     width: inherit;
   }
   p {
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
       margin-bottom: 2rem;
     }
   }
