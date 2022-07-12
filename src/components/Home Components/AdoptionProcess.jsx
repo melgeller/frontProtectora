@@ -3,26 +3,30 @@ import './Adoption.scss';
 const AdoptionProcess = () => {
   return (
     <section>
+      <div className='containerProcess'>
       <h2 id="h2">Proceso de adopción</h2>
-      <div className='firstdiv'>
-      <ul className='numeracionlu'>
-        <li>
-          <img src='../../assets/numeros/sinfondo1.png' alt='one' />
-          <p className='ps'>Ven a conocernos a la prote y si sientes mach un con alguno de nuestros peludos escribenos. </p>
+      <ul className='progressbar'>
+        <li className='active'>
+          <img src='../../assets/1step.jpg' alt='one' />
+          <p className='ps'>Vienes a verme y nos conocemos, y si surge el flechazo...</p>
         </li>
+        <hr></hr>
         <li>
-        <img src='../../assets/numeros/el2.png' alt='one' />
-          <p className='ps'>Después de recibir tu email, estudiaremos tu caso, nos pondremos en contacto con vosotros lo antes posible y organizaremos otra visita para que os podáis seguir conociendo.</p>
+        <img src='../../assets/2step.jpg' alt='one' />
+          <p className='ps'>Documentamos la adopción y consulta veterinaria.</p>
         </li>
+        <hr></hr>
         <li>
-        <img src='../../assets/numeros/el3.png' alt='one' />
+        <img src='../../assets/3step.jpg' alt='one' />
           
-          <p className='ps'>Si entre vosotos existe una conexión y cumpleslos requisitos imprescincibles para nosotros y estás de acuerdo con las condiciones de la protectora ya solo queda una cosa...</p>
+          <p className='ps'>Y comenzamos una vida juntos.</p>
         </li>
+        <hr></hr>
         <li>
-        <img src='../../assets/numeros/el4.png' alt='one' />
-        <p className='ps'>Organizar el dia perfecto para venir a recoger al nuevo miembro de la familia y disfrutar toda la vida de él.</p>
+        <img src='../../assets/4step.jpg' alt='one' />
+        <p className='ps'>UHA estará pendiente de nosotros, haciendo seguimientos.</p>
         </li>
+       
       </ul>
       </div>
     </section>
