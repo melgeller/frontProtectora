@@ -36,22 +36,38 @@ const GalleryDetail = () => {
           {loaded ? (
             <div className='galleryDetail'>
               <div className='pictureDetail'>
+              {pet.picture && pet.picture !== 'h' && pet.picture !== 'undefined' ? (
                 <img src={pet.picture} alt={pet.name}></img>
+              ):(<img src='../../assets/logoperro.png' alt={pet.name}/>)}
+                <div className='petPictureMin'>
+                  {pet.picture1 && pet.picture1 !== 'h' && pet.picture1 !== 'undefined' ? (
+                    <img src={pet.picture1} alt={pet.name}/>
+                  ):null}
+                  {pet.picture2 && pet.picture2 !== 'h' && pet.picture2 !== 'undefined' ? (
+                    <img src={pet.picture2} alt={pet.name}></img>
+                  ):null}
+                </div>
               </div>
               <div className='detailsDetail'>
-                <p>{pet.name}</p>
-                <p>{pet.sex}</p>
-                <p>{pet.age}</p>
-                <p>{pet.size}</p>
-                <p>{pet.adopted}</p>
-              </div>
-              <div className='textDetail'>
-                <p>{pet.description}</p>
-              </div>
-              <div className='buttonDetail'>
-                <p>
-                  <Link to='/adopcion'>Adoptar</Link>
-                </p>
+                <h1>{pet.name}</h1>
+                <p className='petType'>{pet.type}</p>
+                <div className='petFeature'>
+                  {pet.sex === 'macho' ? (
+                    <p className='petSex male'>♂ {pet.sex}</p>
+                  ) : (
+                    <p className='petSex female'>♀ {pet.sex}</p>
+                  )}
+
+                  <p className='petAge'>🎂 {pet.age}</p>
+                  <p className='petSize'>📏 {pet.size}</p>
+                </div>
+                <p className='petAdopted'>{pet.adopted}</p>
+                <p className='petDetail'>{pet.description}</p>
+                <div className='buttonDetail'>
+                  <p>
+                    <Link to='/adopcon'>Adoptar</Link>
+                  </p>
+                </div>
               </div>
             </div>
           ) : (
