@@ -83,8 +83,7 @@ const Donaciones = () => {
             <p>
               Puedes hacer un donativo puntual para ayudar a nuestros animales
               siempre y cuando tus circunstancias te lo permitan. En cualquier
-              momento puedes donar la cantidad de dinero que puedas permitirte,
-              sin compromisos, sin mensualidades.
+              momento puedes donar la cantidad de dinero que puedas permitirte.
             </p>
           </div>
         </div>
