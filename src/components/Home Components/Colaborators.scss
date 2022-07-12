@@ -1,0 +1,40 @@
+.colaboratorsContainer{
+    background-color: #D9D9D9;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+.colaboratorsContainer ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    img {
+        @media (max-width:600px)  {
+            margin: 5%;
+            width: 45%;
+        }
+        width: 130px;
+        height: 100px;
+        object-fit: contain;
+    }
+    
+    
+}
+
+img {
+    @media (max-width:600px)  {
+        margin: 5%;
+        width: 45%;
+    }
+    width: 130px;
+}
+
+
