@@ -31,6 +31,7 @@ const AddBlogs = () => {
         <div className='formField'>
           <label htmlFor='title'>Título: </label>
           <input
+            className='input'
             type='text'
             id='title'
             {...register('title', { required: true })}
